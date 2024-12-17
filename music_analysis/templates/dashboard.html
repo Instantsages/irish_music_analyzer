@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+{% load static %}  <!-- Load the static files -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Dashboard</title>
+    <link rel="stylesheet" href="{% static 'music_analysis/css/dashboard.css' %}">
+</head>
+<style>
+    .placeholder {
+        background-image: url("{% static 'music_analysis/images/banner.png' %}");
+        background-position: center;
+        background-size: contain;
+        height: 300px;
+        width: 90%;
+        margin-left: 40px;
+    }
+</style>
+<body>
+
+    <div class="header"></div>
+        <div class="header-right">
+            <button class="btn btn-signin">Sign In</button>
+            <button class="btn btn-signup">Sign Up</button>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="logo-container">
+            <img src="{% static 'music_analysis/images/newLogo.png' %}" alt="Logo" class="logo-img"> 
+            <h1 class="website-name">Irish Tuner</h1>
+        </div>
+        <ul>
+            <li>
+                <img src="{% static 'music_analysis/images/home_icon.png' %}" alt="Home" class="sidebar-icon">
+                <a href="{% url 'music_dashboard' %}">Home</a>
+            </li>
+            <li>
+                <img src="{% static 'music_analysis/images/discover_icon.png' %}" alt="Discover" class="sidebar-icon">
+                <a href="{% url 'discover' %}">Discover</a>  <!-- Link to the discover view -->
+            </li>            
+            <li>
+                <img src="{% static 'music_analysis/images/songs_icon.png' %}" alt="Songs" class="sidebar-icon">
+                <a href="{% url 'tunes' %}">Tunes</a>
+            </li>
+            <li>
+                <img src="{% static 'music_analysis/images/playlist_icon.png' %}" alt="Playlists" class="sidebar-icon">
+                <a href="{% url 'test-tunes' %}">Test Tunes</a>
+            </li>
+            <li>
+                <img src="{% static 'music_analysis/images/information.png' %}" alt="About" class="sidebar-icon">
+                <a href="{% url 'about' %}">About</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h2>AI For Irish Music!</h2>
+        <div class="placeholder">
+            <!-- Audio Player -->
+            <audio id="audioPlayer" controls>
+                <source src="{% static 'music_analysis/audio/home_page_tune.mp3' %}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+    
+            <!-- Canvas to display waveform 
+            <canvas id="waveformCanvas"></canvas> -->
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <!-- Mission Statement Section -->
+        <div class="mission-statement">
+            <h3>Our Mission</h3>
+            <p>Our mission is to analyze the unique musical features of Irish Reels and use AI to classify user-uploaded music into the works of renowned Irish composers from recent decades, preserving the rich tradition and heritage of Irish music for future generations.</p>
+        </div>
+    
+        <!-- McFadden Section -->
+        <div class="mcfadden">
+            <img src="{% static 'music_analysis/images/mcfadden_picture.png' %}" alt="McFadden Image" />
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>Irish Tuner &copy; 2024</p>
+    </div>
+    
+
+    <script>
+        // Initialize Web Audio API and setup waveform analyzer
+        const audioPlayer = document.getElementById('audioPlayer');
+        const canvas = document.getElementById('waveformCanvas');
+        const canvasContext = canvas.getContext('2d');
+    
+        let audioContext;
+        let analyser;
+        let dataArray;
+        let bufferLength;
+    
+        // Set up audio context and analyser when the audio starts playing
+        audioPlayer.addEventListener('play', () => {
+            if (!audioContext) {
+                // Initialize the Audio Context and Analyser once
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                const source = audioContext.createMediaElementSource(audioPlayer);
+                analyser = audioContext.createAnalyser();
+                source.connect(analyser);
+                analyser.connect(audioContext.destination);
+    
+                // Configure the analyser for waveform data
+                analyser.fftSize = 2048;
+                bufferLength = analyser.fftSize;
+                dataArray = new Uint8Array(bufferLength);
+    
+                // Start drawing the waveform
+                drawWaveform();
+            }
+        });
+    
+        // Function to draw the waveform on the canvas
+        function drawWaveform() {
+            requestAnimationFrame(drawWaveform);
+    
+            // Get waveform (time domain) data
+            analyser.getByteTimeDomainData(dataArray);
+    
+            // Clear the canvas
+            canvasContext.clearRect(0, 0, canvas.width, canvas.height);
+    
+            // Set up the waveform drawing style
+            canvasContext.lineWidth = 2;
+            canvasContext.strokeStyle = '#4c4c4c'; // Waveform color
+            canvasContext.fillStyle = '#4c4c4c'; // Fill color for the waveform
+    
+            // Begin the waveform path
+            canvasContext.beginPath();
+            let sliceWidth = canvas.width / bufferLength;
+            let x = 0;
+    
+            // Loop through the dataArray to draw the waveform
+            for (let i = 0; i < bufferLength; i++) {
+                let v = dataArray[i] / 128.0; // Scale the waveform
+                let y = (v * canvas.height) / 2;
+    
+                if (i === 0) {
+                    canvasContext.moveTo(x, y);
+                } else {
+                    canvasContext.lineTo(x, y);
+                }
+                x += sliceWidth;
+            }
+    
+            // Complete the waveform path
+            canvasContext.lineTo(canvas.width, canvas.height / 2);
+            canvasContext.stroke();
+    
+            // Fill the waveform area
+            canvasContext.lineTo(canvas.width, canvas.height);
+            canvasContext.lineTo(0, canvas.height);
+            canvasContext.closePath();
+            canvasContext.fill();
+        }
+    </script>
+    
+</body>
+</html>

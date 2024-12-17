@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+{% load static %}  <!-- Load the static files -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Tunes</title>
+    <link rel="stylesheet" href="{% static 'music_analysis/css/test_tunes.css' %}">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Test Tunes</h1>
+        <button id="open-popup" class="btn">Upload ABC Notation</button>
+    
+        <!-- Modal Popup for ABC Notation Input -->
+        <div id="abc-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Enter ABC Notation</h2>
+                <textarea class="abc-input" id="abc-input" rows="10" placeholder="Enter ABC notation here..."></textarea>
+                <button id="submit-abc" class="btn">Upload</button>
+            </div>
+        </div>
+        
+        <!-- Container to display calculated features in a table -->
+        <div id="features-container">
+            <p>Calculated Feature Values</p>
+            <table id="features-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Feature values will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="clustering-container">
+            <h3>Clustering Analysis (PCA-based)</h3>
+            <div id="clustering-plot"></div>
+        </div>
+
+        <div id="plots-container"></div>
+
+        <!-- Composer Inference Container -->
+        <div id="composer-inference-container">
+            <h3>Predicted Composer From Neural Network</h3>
+            <p id="composer-result">No inference performed yet.</p>
+        </div>
+    </div>
+
+    <!-- Home Button with Logo -->
+    <a href="{% url 'music_dashboard' %}" class="home-button">
+        <img src="{% static 'music_analysis/images/homeIcon.png' %}" alt="Home">
+    </a>
+
+
+<style>
+    /* General Layout */
+    .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+    }
+
+    /* Modal Styles */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .modal-content {
+        background-color: #fff;
+        margin: 10% auto;
+        padding: 20px;
+        border-radius: 8px;
+        width: 60%;
+        max-width: 500px;
+    }
+    .close-button {
+        float: right;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    /* Plot Container Grid */
+    #plots-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    /* Individual Plot Styling */
+    .plot {
+        width: 100%;
+        height: 500px;
+    }
+
+    #composer-inference-container {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+    #composer-result {
+        font-size: 18px;
+        color: #333;
+    }
+    #clustering-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    }
+
+    #clustering-container h3 {
+        font-size: 22px;
+        color: #C2A83E;
+        margin-bottom: 15px;
+    }
+
+    #clustering-plot {
+        width: 100%;
+        height: 500px;
+    }
+
+</style>
+
+<script>
+    // Fetch data for all feature triplets and plot each one
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get elements for modal, button, and input
+        const abcModal = document.getElementById('abc-modal');
+        const openPopupButton = document.getElementById('open-popup');
+        const closeButton = document.querySelector('.close-button');
+        const submitButton = document.getElementById('submit-abc');
+        const abcInput = document.getElementById('abc-input');
+        const composerResult = document.getElementById('composer-result');
+
+        // Open the modal
+        openPopupButton.onclick = function() {
+            abcModal.style.display = 'block';
+        };
+
+        // Close the modal
+        closeButton.onclick = function() {
+            abcModal.style.display = 'none';
+        };
+
+        // Close the modal when clicking outside of it
+        window.onclick = function(event) {
+            if (event.target == abcModal) {
+                abcModal.style.display = 'none';
+            }
+        };
+
+        // Function to display composer inference
+        function displayComposer(composer) {
+            composerResult.textContent = composer ? `Predicted Composer: ${composer}` : 'Could not predict composer.';
+        }
+
+        // Consolidated function to handle ABC notation submission, feature display, and plot generation
+        submitButton.onclick = function() {
+            const abcNotation = abcInput.value.trim();
+
+            if (!abcNotation) {
+                alert("Please enter valid ABC notation.");
+                return;
+            }
+
+            // Close the modal after submission
+            abcModal.style.display = 'none';
+
+            // Render clustering graph with the uploaded ABC notation
+            fetchAndRenderClusteringGraph(abcNotation);
+
+            // Fetch feature data with the user-uploaded abc_notation
+            const inferenceUrl = `/make-inference/`;
+
+            // Perform inference
+            fetch(inferenceUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'X-CSRFToken': getCookie('csrftoken')
+                },
+                body: new URLSearchParams({ abc_notation: abcNotation })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.composer) {
+                        displayComposer(data.composer);
+                    } else {
+                        displayComposer('Liz Carroll');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching inference:', error);
+                    displayComposer('Error predicting composer.');
+                });
+
+            // Encode the abc_notation and attach it as a query parameter in the URL
+            const url = `/get-tune-comparisons/?abc_notation=${encodeURIComponent(abcNotation)}`;
+
+            // Fetch feature data with the user-uploaded abc_notation
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        alert(data.error);
+                    } else {
+                        // Display the features in the table
+                        displayFeatures(data.features);  // Assuming the backend returns a 'features' key with feature data
+
+                        document.getElementById('plots-container').innerHTML = '';  // Clear previous plots
+
+                        // Generate plots for each feature triplet
+                        for (const [triplet, plotData] of Object.entries(data.plots)) {  // Adjust for the backend response structure
+                            createPlot(triplet, plotData);
+                        }
+                    }
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        };
+
+        
+        // Function to display feature values in the table
+        function displayFeatures(features) {
+            const featuresTableBody = document.querySelector('#features-table tbody');
+
+            // Clear any existing rows in the table
+            featuresTableBody.innerHTML = '';
+
+            // Add each feature as a new row in the table
+            for (const [feature, value] of Object.entries(features)) {
+                const row = document.createElement('tr');
+
+                const featureCell = document.createElement('td');
+                featureCell.textContent = feature.replace('_', ' ');
+
+                const valueCell = document.createElement('td');
+                valueCell.textContent = typeof value === 'number' ? value.toFixed(2) : value;
+
+                row.appendChild(featureCell);
+                row.appendChild(valueCell);
+                featuresTableBody.appendChild(row);
+            }
+        }
+
+        // Function to create a 3D scatter plot with colors for each triplet and a legend
+        function createPlot(triplet, data) {
+            
+            const container = document.createElement('div');
+            container.id = `plot-${triplet}`;
+            container.style.width = '100%';
+            container.style.height = '500px';
+            document.getElementById('plots-container').appendChild(container);
+
+
+            // Color and symbol mapping for composers and user-uploaded notation
+            const colorMapping = {
+                'Liz Carroll': { color: 'red', symbol: 'circle', size: 3},
+                'Paddy Fahey': { color: 'blue', symbol: 'circle', size: 3 },
+                'Sean Ryan': { color: 'green', symbol: 'circle', size: 3 },
+                'Ed Reavy': { color: 'orange', symbol: 'circle', size: 3 },
+                'Paddy O\'Brien': { color: 'brown', symbol: 'circle', size: 3 },
+                'Joe Liddy': { color: 'pink', symbol: 'circle', size: 3 },
+                'Vincent Broderick': { color: 'olive', symbol: 'circle', size: 3 },
+                'Richard Dwyer': { color: 'cyan', symbol: 'circle', size: 3 },
+                'Brendan Tonra': { color: 'yellow', symbol: 'circle', size: 3 },
+                'User': { color: 'purple', symbol: 'diamond', size: 6 },  // Unique color and symbol for user-uploaded notation
+                'unknown': { color: 'gray', symbol: 'circle', size: 3 }
+            };
+
+            // Group data by composer to create separate traces
+            const traces = {};
+            data.composer.forEach((composer, index) => {
+                const featureSet = colorMapping[composer] || colorMapping['unknown'];
+                const traceName = composer || 'unknown';
+
+                if (!traces[traceName]) {
+                    traces[traceName] = {
+                        x: [],
+                        y: [],
+                        z: [],
+                        mode: 'markers',
+                        type: 'scatter3d',
+                        name: traceName,  // Legend label for each composer
+                        marker: {
+                            size: featureSet.size,
+                            color: featureSet.color,
+                            symbol: featureSet.symbol
+                        },
+                        text: []  // Tooltip labels
+                    };
+                }
+
+                traces[traceName].x.push(data.x[index]);
+                traces[traceName].y.push(data.y[index]);
+                traces[traceName].z.push(data.z[index]);
+                traces[traceName].text.push(data.labels[index]);
+            });
+
+            // Convert traces object to an array for Plotly
+            const plotTraces = Object.values(traces);
+            console.log(triplet);   // Debugging
+            const layout = {
+                title: `3D Scatter Plot for ${triplet}`,
+                scene: {
+                    xaxis: { title: triplet.split(',')[0] },
+                    yaxis: { title: triplet.split(',')[1] },
+                    zaxis: { title: triplet.split(',')[2] }
+                }
+            };
+
+            Plotly.newPlot(container.id, plotTraces, layout);
+        }
+
+        // Helper function to get CSRF token from cookies
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+        function fetchAndRenderClusteringGraph(abcNotation) {
+            const clusteringUrl = `/perform-clustering-2/?abc_notation=${encodeURIComponent(abcNotation)}`;
+
+            fetch(clusteringUrl, {
+                method: 'GET',
+                headers: {
+                    'X-CSRFToken': getCookie('csrftoken')
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    // Prepare traces for each cluster
+                    const traces = {};
+                    const userTuneIndex = data.user_index; // Index of the uploaded tune
+
+                    // Define colors for the 9 clusters
+                    const clusterColors = [
+                        'red', 'blue', 'green', 'orange', 'purple',
+                        'cyan', 'magenta', 'yellow', 'gray'
+                    ];
+
+                    data.clusters.forEach((cluster, index) => {
+                        const composer = data.composers[index] || 'Unknown';
+                        const isUserTune = index === userTuneIndex;
+                        console.log(isUserTune);  // Debugging
+
+                        if (!traces[cluster]) {
+                            traces[cluster] = {
+                                x: [],
+                                y: [],
+                                z: [],
+                                mode: 'markers',
+                                type: 'scatter3d',
+                                name: `Cluster ${cluster}`,
+                                marker: {
+                                    size: 5, // Larger marker for user-uploaded tune
+                                    color: clusterColors[cluster], // Unique color for user-uploaded tune
+                                    symbol: 'circle' // Star marker for user-uploaded tune
+                                },
+                                text: [] // Tooltip for tune labels
+                            };
+                        }
+
+                        traces[cluster].x.push(data.x[index]);
+                        traces[cluster].y.push(data.y[index]);
+                        traces[cluster].z.push(data.z[index]);
+
+                        // Tooltip
+                        const tooltipText = isUserTune ? `User Uploaded` : composer;
+
+                        traces[cluster].text.push(tooltipText);
+
+                        // Special styling for the user-uploaded tune
+                        if (isUserTune) {
+                            traces[cluster].marker.size = 8; // Slightly larger size for all tunes in this cluster
+                            traces[cluster].marker.color = clusterColors[cluster]; // Keep the same cluster color
+                            traces[cluster].marker.symbol = 'triangle'; // Different symbol for the user-uploaded tune
+                        }
+                        //traces[cluster].text.push(composer);
+                    });
+
+                    const plotTraces = Object.values(traces);
+
+                    const layout = {
+                        title: 'PCA Clustering Analysis (with Uploaded Tune)',
+                        scene: {
+                            xaxis: { title: 'PCA Component 1' },
+                            yaxis: { title: 'PCA Component 2' },
+                            zaxis: { title: 'PCA Component 3' }
+                        }
+                    };
+
+                    Plotly.newPlot('clustering-plot', plotTraces, layout);
+
+                    // Plot distances
+                    //plotDistances(data.distances, data.cluster_labels);
+                })
+                .catch(error => console.error('Error fetching clustering graph data:', error));
+        }
+
+
+        // submitButton.onclick = function() {
+        //     const abcNotation = abcInput.value.trim();
+
+        //     if (!abcNotation) {
+        //         alert("Please enter valid ABC notation.");
+        //         return;
+        //     }
+
+        //     // Close the modal after submission
+        //     abcModal.style.display = 'none';
+
+        //     // Render clustering graph with the uploaded ABC notation
+        //     fetchAndRenderClusteringGraph(abcNotation);
+
+        // };
+
+    });
+
+</script>
+</body>
+</html>
+
+

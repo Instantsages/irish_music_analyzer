@@ -1,0 +1,58 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'music_analysis/css/tunes.css' %}">
+
+<div class="modal-header">
+    <h2>Are you sure you want to delete "{{ tune.name }}"?</h2>
+    <span class="close-button" aria-label="Close">&times;</span>
+</div>
+<form method="POST" id="delete-form" action="{% url 'tunes_delete' tune.pk %}">
+    {% csrf_token %}
+    <div class="form-actions">
+        <button type="submit">Yes, delete</button>
+        <button type="button" id="cancel-delete-button">Cancel</button>
+    </div>
+</form>
+
+
+<script>
+    // Handle delete form submission via AJAX
+    document.getElementById('delete-form').onsubmit = function(event) {
+        event.preventDefault();
+        var formData = new FormData(this);
+        fetch(this.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest'
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Close modal and refresh tunes list
+                var modal = document.getElementById('delete-modal');
+                modal.style.display = 'none';
+                location.reload(); // Or update the tunes list via AJAX
+            } else {
+                // Handle errors if necessary
+            }
+        })
+        .catch(error => console.error('Error deleting tune:', error));
+    };
+
+    // Handle close button
+    var closeButton = document.querySelector('.close-button');
+    if (closeButton) {
+        closeButton.onclick = function() {
+            // Close the modal
+            var modal = document.getElementById('delete-modal');
+            modal.style.display = 'none';
+        };
+    }
+
+    // Handle cancel button
+    document.getElementById('cancel-delete-button').onclick = function() {
+        var modal = document.getElementById('delete-modal');
+        modal.style.display = 'none';
+    };
+</script>

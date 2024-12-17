@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'music_analysis/css/tunes.css' %}">
+</head>
+<style>
+    /* Form group container */
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    /* Styling for form fields */
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    /* Styling for the form actions (buttons) */
+    .form-actions {
+        margin-top: 20px;
+    }
+
+    .form-actions button {
+        padding: 10px 20px;
+        background-color: aqua;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* Button hover effect */
+    .form-actions button:hover {
+        background-color: darkcyan;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2>{% if tune %}Edit Reel{% else %}Add New Reel{% endif %}</h2>
+        <form method="POST">
+            {% csrf_token %}
+
+            <div class="form-group">
+                {{ form.name.label_tag }}
+                {{ form.name|add_class:"form-control" }}
+            </div>
+        
+            <div class="form-group">
+                {{ form.composer.label_tag }}
+                {{ form.composer|add_class:"form-control" }}
+            </div>
+        
+            <div class="form-group">
+                {{ form.abc_notation.label_tag }}
+                {{ form.abc_notation|add_class:"form-control" }}
+            </div>
+
+            <button type="submit">{% if tune %}Update{% else %}Create{% endif %}</button>
+        </form>
+    </div>
+</body>
+</html>

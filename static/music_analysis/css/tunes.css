@@ -1,0 +1,305 @@
+body {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #000;  /* Dark background */
+    color: #fff;  /* Light text */
+    margin: 0;
+}
+
+h1, h2 {
+    padding-bottom: 15px;
+    padding-top: 10px;
+    color: #C2A83E;  /* Slightly lighter text for headers */
+}
+
+/* Style the list of tunes */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #635235;  /* Dark gray background for list items */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;  /* Ensure text in list items is white */
+}
+
+/* Style the edit and delete buttons */
+li a, li form {
+    margin-left: 20px;
+}
+
+li a {
+    text-decoration: none;
+    background-color: #7D7D7D;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+li a:hover {
+    background-color: #C2A83E;
+}
+
+li form button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+li form button:hover {
+    background-color: #e41e26;
+}
+
+/* Add padding around the content area */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F3E9DC;  /* Darker container background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Padding and style for forms */
+form {
+    margin-top: 20px;
+}
+
+button[type="submit"], a.button-link {
+    background-color: #f44336;  /* Red background for delete and cancel */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block;
+    margin-right: 10px; /* Add space between buttons */
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover, a.button-link:hover, a.home-button:hover {
+    background-color: #C2A83E;
+}
+
+/* Link colors for Cancel buttons */
+a {
+    color: #ffffff;  /* Yellow links */
+}
+
+a:hover {
+    color: #fff;  /* Hover effect for links */
+}
+
+/* Circular Home Button */
+.home-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;  /* Ensure the button stays on top of other content */
+    width: 60px;  /* Diameter of the circle */
+    height: 60px;  /* Same as width to make it a circle */
+    background-color: #5a6268;  /* Button background color */
+    border-radius: 50%;  /* Makes the button a perfect circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Add shadow for depth */
+}
+
+.home-button img {
+    width: 70%;  /* Scale the logo inside the button */
+    height: 70%;  /* Keep aspect ratio */
+    object-fit: contain;  /* Ensures the logo fits inside the circle */
+}
+
+.home-button:hover {
+    background-color: #C2A83E;  /* Darker background on hover */
+}
+/* 
+.modal-header {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: #333;
+} */
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.close-button:hover, .close-button:focus {
+    color: #f44336;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Overlay */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+/* Show modal when it is visible */
+.modal.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Slide-down animation */
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+/* Close Button */
+.close-button {
+    color: #aaa;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #f44336;
+    text-decoration: none;
+    outline: none;
+}
+
+/* Form Styles */
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="number"],
+.modal-content select,
+.modal-content textarea {
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.2s ease;
+}
+
+.modal-content input[type="text"]:focus,
+.modal-content input[type="number"]:focus,
+.modal-content select:focus,
+.modal-content textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Button Styles */
+.modal-content button[type="submit"],
+.modal-content button[type="button"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-right: 10px;
+}
+
+.modal-content button[type="submit"] {
+    background-color: #5a6268;
+    color: #fff;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.modal-content button[type="button"] {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.modal-content button[type="button"]:hover {
+    background-color: #5a6268;
+}
+
+.modal-content button[id="cancel-delete-button"]:hover {
+    background-color: #f44336;
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        width: 95%;
+        padding: 15px 20px;
+    }
+
+    .modal-header h2 {
+        font-size: 1.3em;
+    }
+
+    .close-button {
+        font-size: 1.2em;
+    }
+}

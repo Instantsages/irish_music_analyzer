@@ -1,0 +1,9 @@
+<!-- tune_list_item.html -->
+
+<li id="tune-{{ tune.pk }}">
+    <span><strong>{{ tune.name }}</strong> by {{ tune.composer }}</span>
+    <div>
+        <a href="#" class="edit-tune-link" data-edit-url="{% url 'tunes_edit' tune.pk %}">Edit</a>
+        <a href="#" class="delete-tune-link" data-delete-url="{% url 'tunes_delete' tune.pk %}">Delete</a>
+    </div>
+</li>

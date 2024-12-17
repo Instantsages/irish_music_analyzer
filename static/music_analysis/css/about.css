@@ -1,0 +1,100 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #333;
+}
+
+.about-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #F3E9DC;
+    width: 90%;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.about-container h1 {
+    font-size: 36px;
+    color: #C2A83E;
+    margin-bottom: 30px;
+}
+
+/* Grid Layout for Team Members */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #F3E9DC;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Individual Team Member Card */
+.team-member {
+    background-color: #635235;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.team-member .team-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover; /* Ensures the image fits nicely inside the circle */
+    box-shadow: 0 2px 6px #C2A83E;
+}
+
+.team-member h3 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.team-member strong {
+    color: #000;
+}
+
+/* Circular Home Button */
+.home-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;  /* Ensure the button stays on top of other content */
+    width: 60px;  /* Diameter of the circle */
+    height: 60px;  /* Same as width to make it a circle */
+    background-color: #7D7D7D;  /* Button background color */
+    border-radius: 50%;  /* Makes the button a perfect circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Add shadow for depth */
+}
+
+.home-button img {
+    width: 70%;  /* Scale the logo inside the button */
+    height: 70%;  /* Keep aspect ratio */
+    object-fit: contain;  /* Ensures the logo fits inside the circle */
+}
+
+a.home-button:hover {
+    background-color: #C2A83E;  /* Darker background on hover */
+}

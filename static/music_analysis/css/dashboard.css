@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #000;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: calc(100% - 250px); /* Adjust header width to start from sidebar's right boundary */
+    left: 290px;               /* Make the header start after the sidebar */
+    top: 0;
+    z-index: 100;
+    height: 50px;
+    box-sizing: border-box;
+    border-left: 1px olid #2d3748;  /* Thin boundary only on the right side */
+
+}
+
+.header-right {
+    gap: 10px;  /* Add space between the buttons */
+}
+
+.btn {
+    background-color: #1e1e1e;
+    border: 1px solid #888;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn-signin {
+    background-color: #4CAF50;  /* Green for Sign In */
+}
+
+.btn-signup {
+    background-color: #008CBA;  /* Blue for Sign Up */
+}
+
+.btn:hover {
+    background-color: #333;  /* Slightly darker on hover */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #000000;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    border-right: 1px solid #2d3748;  /* Thin boundary only on the right side */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+}
+
+.logo-img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.website-name {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    text-align: left;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.sidebar ul li img.sidebar-icon {
+    width: 20px;   /* Adjust the size of the icon */
+    height: auto;
+    margin-right: 20px;  /* Space between icon and text */
+    margin-left: 8px;  /* Space between icon and left boundary */
+}
+
+.sidebar ul li a {
+    color: #cbd5e0;
+    text-decoration: none;
+}
+
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+.main-content h2 {
+    background-color: #F3E9DC;  /* Change this color to whatever you like */
+    color: #C2A83E;            /* Text color to contrast with the background */
+    padding: 10px;           /* Add some padding for better spacing */
+    border-radius: 4px;      /* Optional: Rounded corners */
+    display: inline-block;   /* Make sure the background wraps only around the text */
+    margin-left: 40px;       /* Adjust the margin to align with the sidebar */
+    margin-top: 40px;        /* Adjust the margin to align with the header */
+    font-size: 50px;
+}
+
+/* dashboard.css */
+.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*.placeholder {
+    
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; /* Prevents the image from repeating 
+    width: 100%; /* Ensure the div spans the full width of its container 
+    height: 300px; /* Adjust height to your preference 
+    position: relative; /* Keeps child elements positioned correctly 
+}*/
+
+audio {
+    width: 100%;
+    max-width: 300px;
+}
+
+canvas {
+    width: 100%;
+    max-width: 500px;
+    height: 100px;
+    background-color: #000;
+}
+
+/* Mission Statement Section 
+.mission-statement {
+    background-color: #F3E9DC;
+    margin-top: 60px;
+    margin-left: 290px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #333;
+    text-align: center;
+    font-size: 18px;
+    width:  450px; 
+}
+
+.mission-statement h3 {
+    margin-left: 10px;
+    font-size: 100px;
+    color: #C2A83E;
+    margin-bottom: 20px;
+}
+
+.mission-statement p {
+    margin-left: 60px;      
+    line-height: 1.6;
+    font-size: 22px;
+    color: #000000;
+    margin: 0;
+}*/
+/* Wrapper to contain both sections side by side */
+.content-wrapper {
+    display: flex; /* Aligns the children side by side */
+    align-items: center; /* Vertically aligns them */
+    margin: 60px auto; /* Adjusts top margin and centers horizontally */
+    margin-right: 80px;
+    max-width: 1060px; /* Controls overall width */
+}
+
+/* Mission Statement Section */
+.mission-statement {
+    background-color: #F3E9DC;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #333;
+    text-align: center;
+    font-size: 18px;
+    width: 60%; /* Adjust width to share space with McFadden */
+}
+
+.mission-statement h3 {
+    margin-left: 10px;
+    font-size: 100px;
+    color: #C2A83E;
+    margin-bottom: 20px;
+}
+
+.mission-statement p {
+    margin-left: 60px;      
+    line-height: 1.6;
+    font-size: 22px;
+    color: #000000;
+    margin: 0;
+}
+
+/* McFadden Section */
+.mcfadden {
+    width: 45%; /* Takes up the remaining width */
+    text-align: center;
+}
+
+.mcfadden img {
+    width: 100%; /* Image fills the div */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Matches the mission-statement styling */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Matches the shadow style */
+}
+

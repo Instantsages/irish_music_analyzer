@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+{% load static %}  <!-- Load the static files -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Music</title>
+    <link rel="stylesheet" href="{% static 'music_analysis/css/discover.css' %}">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<style>
+    /* Style for the popup to be consistent with other forms */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    }
+
+    .modal.show {
+        display: block; /* Show modal when the 'show' class is added */
+    }
+
+    .modal-content {
+        background-color: white;
+        margin: 10% auto;
+        padding: 20px;
+        border-radius: 8px;
+        width: 50%;
+        max-width: 500px;
+        position: relative;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
+    }
+    .close-button:hover {
+        color: #f44336;
+    }
+
+    /* Consistent form actions button style */
+    .form-actions button {
+        padding: 10px 20px;
+        background-color: #7D7D7D;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .form-actions button:hover {
+        background-color: #C2A83E;
+    }
+
+    /* Home button with logo */
+    a.home-button {
+        background-color: #7D7D7D;
+    }
+    a.home-button:hover {
+        background-color: #C2A83E;
+    }
+    .container.analysis-actions {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .container.analysis-actions button:hover {
+        background-color: #C2A83E;
+    }
+    .container.analysis-actions button {
+        padding: 10px 20px;
+        background-color: #7D7D7D;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
+</style>
+<body>
+
+    <div class="container">
+        <h1>Discover Musical Features</h1>
+        <p>Select one feature for each axis (X, Y, and Z):</p>
+
+        <!-- Dropdown for X-axis selection -->
+        <div>
+            <label for="x-axis">X-Axis:</label>
+            <select id="x-axis">
+                <option value="">Select a feature</option>
+                <option value="notes">Notes</option>
+                <option value="rests">Rests</option>
+                <option value="chords">Chords</option>
+                <option value="avg_pitch">Avg. Pitch</option>
+                <option value="pitch_range">Pitch Range</option>
+                <option value="pitch_sd">Pitch Standard Deviation</option>
+                <option value="pitches_len">Pitches Length</option>
+                <option value="avg_duration">Avg. Duration</option>
+                <option value="duration_range">Duration Range</option>
+                <option value="duration_sd">Duration Standard Deviation</option>
+                <option value="total_duration">Total Duration</option>
+                <option value="avg_interval">Avg. Interval</option>
+                <option value="interval_range">Interval Range</option>
+                <option value="interval_sd">Intreval Standard Deviation</option>
+            </select>
+        </div>
+
+        <!-- Dropdown for Y-axis selection -->
+        <div>
+            <label for="y-axis">Y-Axis:</label>
+            <select id="y-axis">
+                <option value="">Select a feature</option>
+                <option value="notes">Notes</option>
+                <option value="rests">Rests</option>
+                <option value="chords">Chords</option>
+                <option value="avg_pitch">Avg. Pitch</option>
+                <option value="pitch_range">Pitch Range</option>
+                <option value="pitch_sd">Pitch Standard Deviation</option>
+                <option value="pitches_len">Pitches Length</option>
+                <option value="avg_duration">Avg. Duration</option>
+                <option value="duration_range">Duration Range</option>
+                <option value="duration_sd">Duration Standard Deviation</option>
+                <option value="total_duration">Total Duration</option>
+                <option value="avg_interval">Avg. Interval</option>
+                <option value="interval_range">Interval Range</option>
+                <option value="interval_sd">Intreval Standard Deviation</option>
+            </select>
+        </div>
+
+        <!-- Dropdown for Z-axis selection -->
+        <div>
+            <label for="z-axis">Z-Axis:</label>
+            <select id="z-axis">
+                <option value="">Select a feature</option>
+                <option value="notes">Notes</option>
+                <option value="rests">Rests</option>
+                <option value="chords">Chords</option>
+                <option value="avg_pitch">Avg. Pitch</option>
+                <option value="pitch_range">Pitch Range</option>
+                <option value="pitch_sd">Pitch Standard Deviation</option>
+                <option value="pitches_len">Pitches Length</option>
+                <option value="avg_duration">Avg. Duration</option>
+                <option value="duration_range">Duration Range</option>
+                <option value="duration_sd">Duration Standard Deviation</option>
+                <option value="total_duration">Total Duration</option>
+                <option value="avg_interval">Avg. Interval</option>
+                <option value="interval_range">Interval Range</option>
+                <option value="interval_sd">Intreval Standard Deviation</option>
+            </select>
+        </div>
+
+        <!-- Error message placeholder -->
+        <p id="error-message" style="color: red; display: none;">You must select exactly three features (one for each axis).</p>
+
+        <div class="analysis-actions">
+            <!-- Button to trigger graph update -->
+            <button onclick="plotGraph()">3D Scatter Plot</button>
+
+            <!-- Button to trigger heatmap popup -->
+            <button id="heatmap-btn">Heatmap</button>
+
+            <!-- Button to trigger clustering popup -->
+            <button id="cluster-btn">Cluster</button>
+        </div>
+        
+        <!-- Graph Container -->
+        <div id="graph-container" style="width: 98%; height: 500px;"></div>
+
+    </div>
+
+    <!-- Heatmap Popup Modal -->
+    <div id="heatmap-popup" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeHeatmapPopup()">&times;</span>
+            <h2>Heatmap Analysis</h2>
+            
+            <!-- Container for the heatmap -->
+            <div id="heatmap-container" style="width: 100%; height: 500px;"></div>
+
+            <div class="form-actions">
+                <button type="button" onclick="closeHeatmapPopup()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cluster Popup Modal -->
+    <div id="cluster-popup" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeClusterPopup()">&times;</span>
+            <h2>Clustering Analysis</h2>
+            
+            <!-- Container for the clustering graph -->
+            <div id="cluster-container" style="width: 100%; height: 400px;"></div>
+
+            <div class="form-actions">
+                <button type="button" onclick="closeClusterPopup()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Button with Logo -->
+    <a href="{% url 'music_dashboard' %}" class="home-button">
+        <img src="{% static 'music_analysis/images/homeIcon.png' %}" alt="Home">
+    </a>
+
+    <script>
+        // Function to plot the 3D scatter graph based on selected features with AJAX
+        function plotGraph() {
+            // Get selected features for X, Y, and Z axes
+            let xFeature = document.getElementById('x-axis').value;
+            let yFeature = document.getElementById('y-axis').value;
+            let zFeature = document.getElementById('z-axis').value;
+
+            // Restrict to exactly three features (one for X, one for Y, and one for Z)
+            if (xFeature === '' || yFeature === '' || zFeature === '') {
+                // Show error message if all three features are not selected
+                document.getElementById('error-message').style.display = 'block';
+                return;  // Stop the function execution
+            } else {
+                // Hide error message if selection is valid
+                document.getElementById('error-message').style.display = 'none';
+            }
+
+            // Send the selected features to the backend via AJAX
+            fetch('/get-musical-features/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': '{{ csrf_token }}'
+                },
+                body: JSON.stringify({ xFeature: xFeature, yFeature: yFeature, zFeature: zFeature })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Clear previous graph
+                document.getElementById('graph-container').innerHTML = '';
+
+                // Plot the 3D scatter plot
+                let trace = {
+                    x: data.x,  // X-axis values (for the selected X-axis feature)
+                    y: data.y,  // Y-axis values (for the selected Y-axis feature)
+                    z: data.z,  // Z-axis values (for the selected Z-axis feature)
+                    mode: 'markers',
+                    type: 'scatter3d',
+                    marker: {
+                        size: 5,
+                        color: data.composerColorMapping,  // Use the values of the selected color feature for coloring
+                        colorscale: 'Viridis',  // Choose a color scale (you can customize this)
+                    },
+                    name: `${xFeature} vs ${yFeature} vs ${zFeature}`,
+                    text: data.labels,  // Use tune names for labels
+                    hoverinfo: 'text'  // Show tune names when hovering
+                };
+
+                // Define the layout of the graph
+                let layout = {
+                    title: `${xFeature.charAt(0).toUpperCase() + xFeature.slice(1)} vs ${yFeature.charAt(0).toUpperCase() + yFeature.slice(1)} vs ${zFeature.charAt(0).toUpperCase() + zFeature.slice(1)}`,
+                    scene: {
+                        xaxis: { title: xFeature.charAt(0).toUpperCase() + xFeature.slice(1) },
+                        yaxis: { title: yFeature.charAt(0).toUpperCase() + yFeature.slice(1) },
+                        zaxis: { title: zFeature.charAt(0).toUpperCase() + zFeature.slice(1) }
+                    }
+                };
+
+                // Render the 3D scatter plot in the graph-container div
+                Plotly.newPlot('graph-container', [trace], layout);
+            })
+            .catch(error => console.error('Error fetching data:', error));
+        }
+
+        // Function to display the correlation heatmap in the Heatmap popup
+        function plotHeatmap() {
+            // Fetch correlation data from the backend
+            fetch('/calculate-feature-correlation/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': '{{ csrf_token }}'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Extract correlation data and feature names
+                const correlationData = data.correlation_data;
+                const featureNames = data.feature_names;
+
+                console.log(correlationData);
+
+                // Convert correlation data to a 2D array format for Plotly
+                const zValues = featureNames.map(row => featureNames.map(col => correlationData[row][col]));
+
+                // Plot the heatmap
+                let heatmapData = [{
+                    z: zValues,
+                    x: featureNames,   // Labels for x-axis
+                    y: featureNames,   // Labels for y-axis
+                    type: 'heatmap',
+                    colorscale: 'Viridis'
+                }];
+
+                let layout = {
+                    title: 'Feature Correlation Heatmap',
+                    //xaxis: { title: 'Features' },
+                    //yaxis: { title: 'Features' }
+                };
+
+                // Render the heatmap in the heatmap-container div
+                Plotly.newPlot('heatmap-container', heatmapData, layout);
+            })
+            .catch(error => console.error('Error fetching correlation data:', error));
+        }
+
+        function plotClusterGraph() {
+            // Get selected features for X, Y, and Z axes
+            let xFeature = document.getElementById('x-axis').value;
+            let yFeature = document.getElementById('y-axis').value;
+            let zFeature = document.getElementById('z-axis').value;
+
+            // Ensure that all three features are selected
+            if (xFeature === '' || yFeature === '' || zFeature === '') {
+                document.getElementById('error-message').style.display = 'block';
+                return;
+            } else {
+                document.getElementById('error-message').style.display = 'none';
+            }
+
+            // Send selected features to the backend for clustering
+            fetch('/perform-clustering/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': '{{ csrf_token }}'
+                },
+                body: JSON.stringify({ xFeature: xFeature, yFeature: yFeature, zFeature: zFeature })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Clear previous graph
+                document.getElementById('cluster-container').innerHTML = '';
+
+                // Define colors for each cluster
+                const clusterColors = data.colorlist;
+                const colornum = clusterColors.length;
+
+                // Create traces for each cluster
+                let traces = [];
+
+                for (let i = 0; i < colornum; i++) {
+                    let clusterPoints = data.clusters.map((cluster, index) => cluster === i ? index : -1).filter(index => index !== -1);
+                    
+                    let trace = {
+                        x: clusterPoints.map(index => data.x[index]),
+                        y: clusterPoints.map(index => data.y[index]),
+                        z: clusterPoints.map(index => data.z[index]),
+                        mode: 'markers',
+                        type: 'scatter3d',
+                        marker: {
+                            size: 5,
+                            color: clusterColors[i]
+                        },
+                        name: `Cluster ${i + 1}`,
+                        text: clusterPoints.map(index => data.composers[index]),  // Composer names for hover
+                        hoverinfo: 'text'
+                    };
+                    traces.push(trace);
+                }
+
+                // Layout for the 3D scatter plot
+                let layout = {
+                    title: 'K-Means Clustering of Tunes',
+                    scene: {
+                        xaxis: { title: xFeature.charAt(0).toUpperCase() + xFeature.slice(1) },
+                        yaxis: { title: yFeature.charAt(0).toUpperCase() + yFeature.slice(1) },
+                        zaxis: { title: zFeature.charAt(0).toUpperCase() + zFeature.slice(1) }
+                    }
+                };
+
+                // Render the clustering graph in the cluster-container div
+                Plotly.newPlot('cluster-container', traces, layout);
+            })
+            .catch(error => console.error('Error fetching clustered data:', error));
+        }
+
+        // Function to open Cluster Popup and display the Clustering Graph
+        function openClusterPopup() {
+            // Get selected features for X, Y, and Z axes
+            let xFeature = document.getElementById('x-axis').value;
+            let yFeature = document.getElementById('y-axis').value;
+            let zFeature = document.getElementById('z-axis').value;
+
+            // Check if exactly three features are selected
+            if (xFeature === '' || yFeature === '' || zFeature === '') {
+                // Show error message if all three features are not selected
+                document.getElementById('error-message').style.display = 'block';
+            } else {
+                // Hide error message if selection is valid
+                document.getElementById('error-message').style.display = 'none';
+                
+                // Display the Cluster popup and plot the clustering graph
+                document.getElementById('cluster-popup').classList.add('show');
+                plotClusterGraph();  // Call the clustering graph plotting function
+            }
+        }
+
+        // Close the Cluster Popup
+        function closeClusterPopup() {
+            document.getElementById('cluster-popup').classList.remove('show');
+        }
+
+        // Open Heatmap Popup and Display the Heatmap
+        function openHeatmapPopup() {
+            document.getElementById('heatmap-popup').classList.add('show');
+            plotHeatmap();  // Call the heatmap plotting function when the popup opens
+        }
+
+        // Close the Heatmap Popup
+        function closeHeatmapPopup() {
+            document.getElementById('heatmap-popup').classList.remove('show');
+        }
+
+        // Function to show the clustering popup
+        // function openPopup() {
+        //     document.getElementById('cluster-popup').style.display = 'block';
+        // }
+
+        // // Function to close the clustering popup
+        // function closePopup() {
+        //     document.getElementById('cluster-popup').style.display = 'none';
+        // }
+
+        // Attach event listener to Cluster button to open the popup
+        document.getElementById('cluster-btn').addEventListener('click', openClusterPopup);
+        document.getElementById('heatmap-btn').addEventListener('click', openHeatmapPopup);
+    </script>
+
+
+   
+</body>
+</html>

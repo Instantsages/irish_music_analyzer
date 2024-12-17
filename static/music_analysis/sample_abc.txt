@@ -1,0 +1,1769 @@
+composer: Liz Carroll
+X: 4
+T: Johnny Harling's
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+|:FA (3AAA DFAd|(ef) af ed (3Bcd|(AB) dB A2 de|dBAF EDBA|
+FA (3AAA AFEF|D2 GA BAgb|afed (3Bcd Ad|afeg fddz:|
+|:|fB (3BBB Bfbf|aA (3AAA dB (3BBB|bB (3BBB FB (3BBB|Acec B3 c|
+dFAd efaz|GFGA Bdgb|afed (3Bcd Af|afeg fedz:|
+
+composer: Liz Carroll
+X: 4
+T: Merle's Tune
+R: reel
+M: 4/4
+L: 1/8
+K: Bdor
+|:BFBc dBFE|DFGB ABce|fBBc defg|aefd cAec|
+BFBc dBfe|defg aece|dAdf aece|aecf dB ~B2:|
+|:Bcdf bBgB|fBfb fBBA|Bcde aAfA|eAea eAcA|
+BFBc dBFB|defg aece|dAfd cAec|aecf dB~B2:|
+
+composer: Liz Carroll
+X: 1
+T: The Chandelier
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+|:D2 (3DDD ADFG|A2FA dfed|Bg~g2 gfed|c/B/A ed cAGE|
+D2 (3DDD ADFG|A2FA dfed|cAAB cAed|1 cAGE ~F3E:|2 cAGE FABc||
+|:dfbf afeg|~f3d eABc|dfbf afeg|fedB cdeg|
+~f3e de f/e/d|eAAA ABcA|B2GF GBdB|1 AFEG FABc:|2 AFEG F3E||
+
+composer: Liz Carroll
+X: 2
+T: The Cliff Dwellers
+R: reel
+M: 4/4
+L: 1/8
+K: Gdor
+|dGGG FGAc|dggg {a}b2 ag|gagf dgfd|c<FAF Acfe||
+dG G/G/G FGAc|dg g/g/g {a}b2 ag|gagf dgfd|cFAF G2 Ac||
+dG G/G/G FGAc|dg g/g/g {a}b2 ag|gagf dgfd|cFAF Acfe||
+dG G/G/G FGAc|dg g/g/g {a}b2 ag|gagf dgfd|cFAF G3 a||
+gfdc A~G3|DDGG AGGA|Bcdg fcdB|AF F/F/F [F3C3] a||
+gfdc A~G3|DG[G,G]A {a}b2 ag|gagf dgfd|cFAF G3 a||
+gfdc A~G3|D2 GG AGGA|Bcdg fcdB|AF F/F/F [F3C3] a||
+gfdc A~G3|DGGA {a}b2 ag|gagf dgfd|cFAF G2 Ac||
+
+composer: Liz Carroll
+X:1
+T:Who Has the Conn
+M:4/4
+L:1/8
+Q:1/4=120
+K:Em clef=treble
+[Q:1/4=120]c2 BA cA eA |BA dD B2 AG |E2 DE GA BG, |B,1/2A,1/2G, CB, A,2 >B2 |c2 BA cA eA |BA dD B2 AG |E2 DE GA BG,|B,1/2A,1/2G, CB, A,2 >^D2 |ED CB, A,C E^G |A2 GF ED CD |ED CB, A,C EA |AG FE DA, CD |ED CB, A,C E^G |A2 BA cA EA |Fd AF dA FD |=Fd AF d2 D^D |c2 BA cA eA |BA dD B2 AG |E2 DE GA BG, |B,1/2A,1/2G, CB, A,2 >B2 |c2 BA cA eA |BA dD B2 AG |E2 DE GA BG, |B,1/2A,1/2G, CB, A,2 >^D2 |ED CB, A,C E^G |A2 GF ED CD |ED CB, A,C EA |AG FE DA, CD |ED CB, A,C E^G |A2 BA cA EA |Fd AF dA FD |=Fd AF d2 >B2 |
+
+composer: Liz Carroll
+X: 6
+T: Wissahickon Drive
+R: reel
+M: 4/4
+L: 1/8
+K: Amaj
+|:EFAB cBAB|c/c/c ef ecBA|F/F/F dF eFde|feef ecBA|
+EFAB cBAB|ceef eAce|fagf eAcA|1 BEGB A2 AE:|2 BEGB A2 ce||
+|:a2 ga baga|fAde f/g/a gf|eAce aece|fedc BEGB|
+[1a/b/a ga baga|fAde f/g/a gf|eAce aedc|BEGB ABce:|
+[2A2 ce ac'ba|fAde f/g/a gf|eAce aedc|BEGB A3 E||
+
+composer: Liz Carroll
+X: 2
+T: A Tune For The Girls
+R: reel
+M: 4/4
+L: 1/8
+K: Amix
+|:CA,CD E3D|CEGF EDCA,|DA,DF G3D|GDAD FGED|
+CA,CD E3D|CEGF EDCA,|DFAF G3D|1 GFED CA,A,G,:|2 GFED CA,A,2||
+|:cABG A3G|EA (3AAA EAAd|cABG A3G|ED (3DDD EDCD|
+[1 cABG A3c|AGED CA,B,C|DFAF G3D|GFED CA,A,2:|
+[2 EAAA c3B|BA G3 EED|CEAF G3D|GFED CA,A,G,||
+|:A,EAd c2A,E|AcB2 G,B,DB,|A,EAd cAB2|G,B,DG BGDB,|
+A,EAd c2A,E|AcB2 G,B,DB,|A,EAd cAB2|1 G,B,DG BGDB,:|2 G,B,DG E2ED||
+
+composer: Liz Carroll
+X: 5
+T: Anne Lacey's
+R: reel
+M: 4/4
+L: 1/8
+K: Gdor
+|:G2GF GBDG|BGFD CB,DF|G2GF GBdc|BGFD CB,DB,|
+C2CB, CDFG|BGFD GDFD|GG, G,/G,/G, B,CDG|BGFD FGG2:|
+|:g3f dcBc|dcBc dggf|ecfc gcfg|bgfd cBdf|
+g3f dcBc|dcBG FDGD|C2CB, CDFG|1BGFD GDFG:|2BGFD GDF2||
+
+composer: Liz Carroll
+X: 1
+T: Ashleigh Roach's
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+|:g|fdef g2ed|(3cBA eA fAeg|fdef g2de|dcdB cAAg|
+fdef g2ed|(3cBA eA fAeg|fdaf gefd|1 dcde cAA:|2 dcde cA||
+|:cd|eA~A2 eAce|fdge fdcd|eA~A2 eAag|(3fga ge d2cd|
+eA~A2 eAce|fdge fdcd|ecdB cAag|1 (3fga ge d2:|2 (3 fga ge d3||
+
+composer: Liz Carroll
+X: 4
+T: The Brocca
+R: reel
+M: 4/4
+L: 1/8
+K: Ador
+EA,CE DG,B,D|EA,CE ABAG|E2A,E ~F2DF|GB (3ABc BAGF|
+EA,CE DG,B,D|EA,CE ABAG|1 ~E2FD FG (3GFE|DB,G,B, A,B,CD:|2 EA (3cBA BcAG|G,A,B,G, A,B,^CE||
+K: Dmaj
+Addc d2fd|~d2ed cdec|dFFE DdAF|DE~E2 EDCE|
+Addc d2fd|~d2ed cdec|d2=Fd =cAGE|EDCE DE=FE|
+Dddc d2ad|~d2ad cdec|dFFE DdAF|~G2FG EA,CE|
+Addc d2fd|~d2ed cdec|d2=Fd =cAGE|EDCE DFGF||
+
+composer: Liz Carroll
+X: 1
+T: Crush Cars
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+D|EB B2 EGBe|dBAF EDB,A,|DF F2 DFAe|dFAD FBAF|
+DB B2 EGBe|dBdF EDB,A,|DF F2 DFAe|dBAB E3:|
+G|Bege dBBE|AEBE cEdE|Bege fgfe|^dBeB fB B2|
+BABc dAcA|ABcA BEGE|EDFA dedc|BGAF E3:|
+
+composer: Liz Carroll
+X: 1
+T: Cutting The Waves
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+|:Ad d2 fdAd|BABc dAFB|Ad d2 fdAF|B,DFB AFEF|
+Ad d2 fdAd|BABc d2 de|faed BAFE|F2 AF EDB,D:|
+FBBA B2 AB|dFFD EDB,D|FBBA B2 dB|A2 AB ABFA|
+B2 BA B2 AB|dFFD EDB,D|dBBA BedB|AFED B,E E2|
+FBBA B2 AB|dFFD EDB,D|FBBA B2 dB|A2 AB ABde|
+fBBA B2 AB|dFFD EDB,D|dBBA BedB|AFED B,E E2||
+
+composer: Liz Carroll
+X: 1
+T: Dancing On A Sixpence
+R: reel
+M: 4/4
+L: 1/8
+K: Edor
+|:BEEB cBAE|FEED B,EA,B,|DFAF ABDF|Adfa afed|
+BEEB cBAE|FEED B,EA,B,|DFAF ABDF|1 AdfF RE3A:|2 AdfF RE3f||
+|:eBRB2 ABdf|eBfBg2fe|dfab afdf|gefd BAFA|
+[1Beed ABdf|eBfBRg2fe|d/e/f Bd AdfA|FEED EFGB:|
+[2RB3A B/c/dcA|FEED B,EA,B,|DFAF ABDF|AdfF E3A||
+
+composer: Liz Carroll
+X: 1
+T: Drying Out
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+FDFG Adcd|G=cGc BGAG|FDFG Adcd|DEFG =cGAF|
+FDFG Adcd|G=cGc BGAG|=FDFG _BABF|GEA,B, =CDED:|
+D/E/F GA d2 Ad|dcAd eddA|D/E/F GA =c2 Gc|=cBGc eccA|
+D/E/F GF D2 FA|d2 Ad fdfd|=c2 Gc =fcec|=cBGc AddA:|
+
+composer: Liz Carroll
+X: 1
+T: The E-B-E
+R: reel
+M: 4/4
+L: 1/8
+K: Edor
+|:E2BE DAFD|B,DEF EDB,D|E2BE DAFD|FB,EB, DB,A,D|
+E2BE DAFD|B,DEF EDB,D|BDAD FB,EB,|1 DB,A,D B,EED:|2 DB,A,D B,EE2||
+|:eBde BEED|E^GBE d2cd|eBde BEE2|FB,EB, D2FA|eBde BEED|
+E^GBE d2cd|1 eBdA BFAE|FB,EB, D2FA:|2 Bcde Bcde|(3ABc de ABcd||
+
+composer: Paddy Fahey
+X: 11
+T: Paddy Fahey's
+R: reel
+M: 4/4
+L: 1/8
+K: Dmin
+|: D2A,D ~F3 G | AdcA d2de | ^fedf edcA | dcAG FDEC |
+D2A,D ~F3 G | AdcA d2de | ^fedf edcA | dcAG =FD D2 :|
+|: Ad (3ddd ad^fd | ~c3G E=FGB | Ad (3ddd da^fd | ~c3d edcA |
+a2ga AdcA | dcAG FDCE | D2A,D ~F3G |1 AdcA d3c :|2 AdcA d4 ||
+
+composer: Paddy Fahey
+X: 1
+T: Paddy Fahey's
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+|:ADFA dcde|fged cAAg|fAdf g2 e/f/g|f/g/aed cAGE|
+ADFA d2Ad|fged cAag|fAdf g/a/ged|cAGE FDD2:|
+fgaf g/a/geg|fdAF D3=c|B~G3 BGAg|fged cdeg|
+fgaf gaeg|fdAF G2FG|A2GB Adfd|cAGE FDD2|
+fgaf g/a/geg|fdAF D3=c|B~G3 BGAg|fged cdeg|
+fgaf gaeg|fdAF G2FG|A~d3 aded|cAGE FDD2||
+
+composer: Paddy Fahey
+X: 2
+T: Paddy Fahey's
+R: reel
+M: 4/4
+L: 1/8
+K: Cmaj
+|: GFEG FECD | EFGA _B3 c | dcBd cBG2 |A/B/cdf ecdB | 
+GFE/F/G FECD | EFGA _B3 c |dcBd cBGE |1 FDB,D C4 :|2FDB,D C2 EG ||
+|: cdef gcac | gcec BGG_B | AFFE F_B,DF | EGcd BGFD |
+Gc ~c2 gcac | gcec BGG_B | AFFE FAdc |1 BGFD C2 EG :|2 BGFD C4 ||
+
+composer: Paddy Fahey
+X: 1
+T: Paddy Fahey's
+R: reel
+M: 4/4
+L: 1/8
+K: Dmin
+F2 DE FAde|fedc AGFE|FA,DE FDGF|EGdG EGCE|
+DA,DE FAde|fece d3e|^fgag fdAG|F2EG FDD2|
+DA,DE FAde|fedc AGFE|F3D G3F|E/F/GdG EGCE|
+DA,DE FAde|fece d3e|^fgag fdAG|F2EG FDD2||
+K: Dmaj
+|:fgag fdde|d=cAB cAG2|Addc defg|a2fd adge|
+fgag fdde|dcAG =c3A|d3e fged|cAGE D4:|
+
+composer: Paddy Fahey
+X: 2
+T: Paddy Fahey's
+R: reel
+M: 4/4
+L: 1/8
+K: Ador
+AEED CEB,E|A,EED E/F/G AB|cded ^cdfd eaag edcB|
+AE E2 CEB,E|A,EED EGAB|cded cBAG EGDF EA, A,2||
+AEED cEBE|AEED E/F/G AB|cded ^cdfd|eaag edcB|
+AE E2 CEB,E|A,EED EGAB|cded cBAG|EGDF EA, A,2||
+eaag edcB|AE E2 cBcd|eged cBcd egdg egdg|
+ea a2 edcB|AE E2 c3 d|eged cBcd eaag egdg||
+eaag edcB|AE E2 cBcd|e/^f/g ed cBcd egdg egdg|
+ea a2 edcB|AE E2 c3 d|eged cBcd|eaag edcB||
+
+composer: Paddy Fahey
+X: 2
+T: Paddy Fahey's
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+A,DFD CEAG|FGEF D2 ag|fd d2 fded EGAG EG=cG|
+AGFD A,2 AG|FGEF D2 ag|fd d2 ADFA|G=CEG FD D2||
+A,DFD CEAG|FGEF D2 ag|fd d2 fded EGAG EG=cG|
+AGFD A,2 AG|FGEF D2 ag|fd d2 ADFA|G=CEG FD D2||
+f/g/a a^g afdf|gfed cA A2|gBdg fAdf gfed cA A2|
+faa^g afdf|gfef g2 ag|faeg fdAF|GECE D4||
+f/g/a a^g afdf|gfed cAAa|g2 eg fAdf gfed cA A2|
+faa^g afdf|g/a/g ef g2 ag|faeg fdAF|GECE D4||
+
+composer: Paddy Fahey
+X: 4
+T: Paddy Fahey's
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+g2 dc BGDE|=F2 cF dFcF|DGBd g3 a gfde fgaf|
+gfdc BGDE|=F2 cF dFcF|DGBd g2 dc BdcA BG G2|
+g/a/g dc BGDE|=F2 cF dFcF|DGBd g3 a gfde fgaf|
+gfdc BGDE|=F2 cF dFcF|DGBd g2 dc|BdcA BGBd||
+g2 fa gbfa|g3 a gfde|fd (3e/d/c/d adeg fgag fdef|
+g2 fa gbfa|g3 a gfde|fd e/d/c/d adeg|fdcA G2 Bd3/2|
+g2 fa gbfa|g3 a gfde|fd (3e/d/c/d adeg fgag fdef|
+g2 fa gbfa|g3 a gfde|fd e/d/c/d adeg|fdcA DGBd||
+
+composer: Paddy Fahey
+X: 1
+T: Paddy Fahey's
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+D2-|:DEFG AGFD|(3EFG AB ~=c2Bc|Ad ~d2 Adad|eged cAGE|
+D2 (3EFG AG (3FED|(3EFG AB ~=c2Bc|Ad ~d2 Adfd|1 cAGE FDDA,:|2 cAGE FDD2||
+|:fgag fdAG|~F2 DF GE=CE|DFAd f2ed|(3Bcd ef g2ag|
+fgag fdAG|~F2 DF GE=CE|DFAd f2ed|1 cAGE FDD2:|2 cAGE FDDA,||
+
+composer: Paddy Fahey
+X: 2
+T: Paddy Fahey's
+R: reel
+M: 4/4
+L: 1/8
+K: Gdor
+BDGA BDGB|AD^FA d2 dc|ABGA BDGB|AdAG DGGA|
+Bc/4B/4A/ Bd BDGB|AD^FA d2 dc|=B/c/d g^f gdBd|c2 =BG DG G2||
+[K:G] Bdgd adfd|Bdgd cAAc|Bdgd adBd|c2 BG DG G2|
+Bdgd adfd|Bdfa g3 a|bg a/4g/4f/g dcBd|c2 BG DG G2||
+[K:F] ABGA BDGB|AD^FA d2 dc|ABGA BDGB|AdAG DGGA|
+Bc/4B/4A/ Bd BDGB|AD^FA d2 dc|=B/c/d g^f gdBd|c2 =BG DG G2|
+[K:G] Bdgd adfd|Bdgd cAAc|B/c/d ad Bdgd c2 BA DG G2|
+B/c/d ad gdfd|Bdfa g3 a|bg a/4g/4f/g dcBd|c2 BG DG G2||
+
+composer: Paddy Fahey
+X: 2
+T: Paddy Fahey's
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+G2 dG BcdB|A=F F2 cFAF|G2 dG Bcdg fgag fdcA|
+G2 dG BcdB|A=F F2 cFAF|G2 dG Bcdg|fdcA G4||
+fgaf g2 ae|fgag fd d2|fgaf g2 ag|fdcA dggf|
+gbaf gfde|=f2 eg ^fdcA|dg g2 dgag|g2 ag fdcA||
+G2 dG BcdB|A=F F2 cFAF|G2 dG Bcdg fgag fdcA|
+G2 dG BcdB|A=F F2 cFAF|G2 dG Bcdg|fdcA G4||
+fgaf g2 ae|fgag fd d2|fgaf g2 ag|fdcA dggf|
+gbaf gfde|=f2 eg ^fdcA|dg g2 dgag|g2 ag fdcA||
+
+composer: Paddy Fahey
+X: 2
+T: Paddy Fahey's
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+ADFA de/4d/4c/dc|ADFA GE=CE|ADFA dcAF G2 FA GE=CE|
+ADFA de/4d/4c/dc|ADFA GE=CE|Add/c/d aded|B=cG=F E=CEG|
+G3 d adbd|aded cA A2-|Ad d/c/d aded B=cG=F E=CEG|
+Add/c/d adbd|aded cA A2|defd cedc|AGFG Ad d2||
+A2 GF Ad d2|A2 GF G=CEG|ADFA dcAF G2 FA E=CEG|
+FDFA de/4d/4c/dc|ADFA GE=CE|Add/c/d aded B=cG=F E=CEG|
+
+composer: Paddy Fahey
+X: 2
+T: Paddy Fahey's
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+DGGF GABd|g3 e fdcA|GFDE =FGAB|c/d/c Bd c=FAF|
+DGGF GABd|g/a/g eg fdcA|GFDE =FGAg|fdcA G4||
+g2 gf gbag|fd d2 acgf|dg g2 gbag|fdaf g2 ga|
+b/a/g af gfde|fgag fdcA|G2 GF GABd|g2 eg fdcA||
+DGGF GABd|g3 e fdcA|GFDE =FGAB|c/d/c Bd c=FAF|
+DGGF GABd|g/a/g eg fdcA|GFDE =FGAg|fdcA G4||
+g2 gf gbag|fd d2 acgf|dg g2 gbag|fdaf g2 ga|
+b/a/g af gfde|fgag fdcA|G2 GF GABd|g2 eg fdcA||
+
+composer: Paddy Fahey
+X: 6
+T: Paddy Fahey's
+R: reel
+M: 4/4
+L: 1/8
+K: Fmaj
+B2 dB DFBd|c=BcA FAcA|B2 dB DFBd|c=BcA _BGGA|
+BDGA BDGB|ADFA c2 =Bc|dgg2 dcBd|1 c=BcF DGGA:|2 c=BcF DGBd||
+g2 dg Bdge|f2 cf Acfa|g^fgd BcdB|dg^fa g3 a|
+bga^f gfdc|BdBG D2 FA|dgg2 dcBd|1 cBcF DGBd:|2 cBcF DGGA||
+
+composer: Paddy Fahey
+X:1
+T:Paddy Fahys reel [7]
+M:4/4
+L:1/8
+Q:220
+C:Paddy Fahy
+R:reel
+K:Gdor
+A ||: B2dB DGBd | ~c2cA FAcA | B2dB DGBd | ~c2cA BGGA |
+B2GA BDGB | AD^FD c2=Bc | dg~g2 dc=Bd |1 c=BcF DGGA :|2 c=BcF DG=Bd || 
+g^fgd Bcge | f2cf AcfA | g^fgd A=BcA |dg^fa ~g2ga |
+bga^f gfdc | (3=Bcd BG D2^FA | dgg2 dc=Bd|1 c=BcF DGBd :||2 c=BcF DGGA ||
+
+composer: Paddy Fahey
+X: 2
+T: Paddy Fahey's
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+_BABd g3 d|BGFG BGdG|A=F F2 Ad^cd|BcAF DGGA|
+_BABd g3 d|BGFG BGdG|A=F F2 Ad^cd|BcAF DG G2|
+_BABd g3 d|BGFG BGdG|A=F F2 Ad^cd|BcAF DGGA|
+_BABd g3 d|BGFG BGdG|A=F F2 Ad^cd|BcAF DG G2||
+g3 fa g3 a|bgdg gfdc|BDGB ADFD|E/F/GBA GE E2|
+g3 fa g3 a|bgdg gfdc|BDGB ADFD|E/F/GBA A4|
+g3 fa g3 a|bgdg gfdc|BDGB ADFD|E/F/GBA GE E2|
+g3 fa g3 a|bgdg gfdc|BDGB ADFD|E/F/G B/c/d g4||
+
+composer: Sean Ryan
+X: 1
+T: A Tune for the Road
+C:Sean Ryan
+Q:180
+L:1/8
+M:C
+R:reel
+K:D
+dF~F2 AFdF|AFDF EDB,D|~A,3B, DEFA|BFAF EDB,D|
+dF~F2 AFdF|AFDF EDB,D|~A,3B, DEFA|BFAF DEFA:|
+defd cdec|dcdB AGFA|GABG FGA2|gfed cdec|
+defd cdec|dcdB AGFA|GABG FGAF|GECE D2D2:|
+
+composer: Sean Ryan
+X: 2
+T: Bill McEvoy's
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+gf|:d2cA dG~G2|DGBd gdBd|c2B/c/d cF~F2|CFAc fagf|
+d2cA dG~G2|DGBd gdBd|c2Ac fage|1 fdcA G2gf:|2 fdcA G2Bd||
+gfga bgaf|gbag fd~d2|ec~c2 gceg|fgag fdef|
+gfga bgaf|gbag fd~d2|ec~c2 gceg|1 fdcA G2Bd:|2 fdcA G2||
+
+composer: Sean Ryan
+X: 1
+T: Pat Lyons'
+R: reel
+M: 4/4
+L: 1/8
+K: Ddor
+DE|:F2(3GFE FGAB|cAfd cAGc|ADED CDEG|AGcG AGEC|
+F2(3GFE FDAB|cAfd cAG2|Ad~d2 cAGE|1 CEGE FDDE:|2 CEGE FDD2|
+|:Ad{e}d^c defd|e=c~c2 gce^c|Ad{e}d^c defa|ge^cd eddc|
+Ad{e}d^c defd|e=c~c2 gceA|(3fga ge fde^c|1 Add^c d3c:|2 Add^c d2DE||
+
+composer: Sean Ryan
+X: 2
+T: The Abbeyleix
+R: reel
+M: 4/4
+L: 1/8
+K: Ddor
+|:A,|D2ED CA,A,2|FEFG ABcA|d2ed cedc|AcGE EDCA,|
+D2ED CA,A,A,|FEFG ABcA|d2ed cedc|AcGE EDD:|
+K:D
+|:A|d2fd adfd|gAfA eAce|dDcD BDAF|GEFD EA,CE|
+d2fd adfd|gAfA eAce|dDcD BDAF|GBAG FDD:|
+
+composer: Sean Ryan
+X: 4
+T: The Blockers
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+A2|Bcdc BGG2|=FDCD FGAc|dg~g2 fgag|fdc_B A=FF2|
+Bcdc BGG2|=FDCD FGAc|dg~g2 fgag|fdcA G2:|
+g2dg BgdB|cBcd cAFA|DG~G2 FGAc|Bcde fdef|
+[1 g2dg BGdB|cBcd cAF2|DG~G2 FGAc|BGAF G2:|
+[2 g2 (3agf gBdB|cBcd cAF2|DG~G2 FGAc|BGAF G2:|
+
+composer: Sean Ryan
+X: 1
+T: The Borris
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+|:dc|Bdgf edcB|AE (3(E^DE) cBAG|FGAB cdef|g2 (3(agf) gfed|
+Bdgf edcB|AE (3(E^DE) cBAG|FGAB cdef|g2 (3(agf) g2:|
+|:ga|(3(bag) af gedc|BG (3(GFG) DG,B,D|CDEG ceag|(3(fga) ge fdga|
+(3(bag) af gedc|BG (3(GFG) DG,B,D|CDEG egag|(3(fga) ef g2:|
+
+composer: Sean Ryan
+X: 1
+T:Cedars of Lebanon, The
+R:reel
+C:Sean Ryan (1919-1985)
+Z:id:hn-reel-356
+M:C|
+K:D
+EA,~A,2 A,CEC|D2FA dcde|fd~d2 AFDF|GEED EGFG|
+EA,~A,2 A,CEC|D2FA dcde|fd~d2 AFDF|1 GBAG FDDF:|2 GBAG FD~D2||
+|:dcde fd~d2|Adfg a2gf|edef gfga|bgaf gece|
+d2de fd~d2|Adfd AFDF|GFGA BcdB|1 AFGE FD~D2:|2 AFGE FDDF||
+
+composer: Sean Ryan
+X: 1
+T: The Edenderry
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+e|:f3d e2dB|AFF/E/F EDB,D|A,3B, DEFG|ABdf edBA|
+f3d e2dB|AFF/E/F EDB,D|A,3B, DEFG|1 ABdf e2de:|2 ABdf e2d2||
+|:faa/^g/a bgaf|dfaf edBA|f3d e2dB|ABdf eBB/^A/B|
+faa/^g/a bgaf|dfaf edBA|f3d e2dB|1 ABdf e2d2:|2 ABdf e2de||
+
+composer: Sean Ryan
+X: 6
+T: The Glen Of Aherlow
+R: reel
+M: 4/4
+L: 1/8
+K: Edor
+B2AF BFAF|~E3F EDB,D|B2AF BFAF|DFAF FEEA|
+B2AF BFAF|~E3F EDB,A,|B,E~E2 DEFA|BdAF FEE2:|
+eB (3BBB egfe|fd (3ddd Adfd|eB~B2 egfe|dBAF FEEA|
+eB (3BBB egfe|fd (3ddd Adfd|~B3d egfe|dBAF FEEA:|
+
+composer: Sean Ryan
+X: 1
+T: The Lamb On The Lawn
+R: reel
+M: 4/4
+L: 1/8
+K: Ador
+|EA (3AAA ABcd|eAAB AGED|EG (3GFG Bd (3d^cd|gedB AGED|
+EA (3AAA ABcd|eAAB AGED|eg (3gfg agea|gedB BA A2:|
+|:agea gede|gedB BA G2|agea gede|gedB BA A2|
+agea gede|gedB BAGD|(3EFG AB cBce|gedB BA A2:|
+
+composer: Sean Ryan
+X: 1
+T: The Night In Newtown
+R: reel
+M: 4/4
+L: 1/8
+K: Edor
+|:BE (3E^DE B,EGB|AD (3D^CD A,DFA|BE (3E^DE BABd|egfe dBAd|
+BE (3E^DE B,EGB|AD (3D^CD A,DFA|BE (3E^DE BABd|1 egfe dBA2:|2 egfe dBAB||
+|:e2ge bege|d2 (3fed ad (3fed|e2ge bege|defa geef|
+gfga bgaf|gfed edBd|(3efg fe dfe^c|dBAF GEE2:|
+
+composer: Sean Ryan
+X: 1
+T: The Reel Of Rio
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+|:GE|DEGA BABd|egg2 agef|gede gedB|AcBA GEE2|
+DEGA BABd|egg2 agef|gede gedB|AcBA G2:|
+|:Bc|dgg2 bgg2|bgag edBd|eBB2 GABd|e2dB AGEG|
+DEGA BABd|egg2 agef|gede gedB|AcBA G2:|
+
+composer: Sean Ryan
+X: 1
+T: The Singing Kettle
+R: reel
+M: 4/4
+L: 1/8
+K: Edor
+|:D|E3F EDB,A,|B,EED EGFE|D3E DB,A,B,|DEFA BdAF|
+E3F EDB,A,|B,EED EGFE|D2 FA dfec|dBAF FEE:|
+|:A|Bdef gfec|dB~B2 AFEF|D3E DB,A,B,|DEFA BdAd|
+Bdef gfec|dB~B2 AFEF|G2BG FGA=c|BGAF GEE:|
+
+composer: Sean Ryan
+X: 1
+T: Skipping Lambs
+R: reel
+M: 4/4
+L: 1/8
+K: Amaj
+|:F|~E3 F ABce|fc (3ccc ABce|a2 ga (3fga ec|dBcA BAFA|
+~E3 F ABce|fc (3ccc ABce|a2 ga (3fga ec|dcBd cA A:|
+|:e|a2 ga fdec|dBcA BAGA|~E3 F ABce|fc (3ccc ABce|
+a2 ga (3fga ec|dBcA BAFA|~E3 F ABce|(3fga ed cA A:|
+|:B|cA (3AAA eAce|aAgA fAec|~B3 c dcde|fB (3BBB fBdB|
+cA (3AAA eAce|aAgAfAec|~B3 c dcde|1 (3 fga ed cA A:|2 (3fga ed cB A(|F E3)||
+
+composer: Ed Reavy
+X: 1
+T:Where The Shannon Rises
+M:C
+L:1/8
+C:Ed Reavy
+S:The Collected Compositions of Ed Reavy
+R:Reel
+N:
+N:Where the Shannon Rises. Ed was proud to recall
+N:that the majestic Shannon rose in his county.
+N:For this reason he called his first book
+N:of tunes: Where the Shannon Rises.
+Z:Joe Reavy
+K:D
+d |: DEFA defe | (3dcB (3cBA BFFG | AGFE DEFA | dBAF EDCE |
+DEFA defe | (3dcB (3cBA BFFG | AGFE DEFA |1 (3Bcd ef fddF :|
+|2 (3Bcd eg fdde fdde || fgaf dcdf | eBfB fBfe | defg afea | %[jc]
+gfeg fedc | defg afdf | edcd efge | (3f^ga ec dcdA | (3Bcd AF EDCE |]
+
+composer: Ed Reavy
+X: 2
+T:Red Tom of the Hills
+R:Reel
+C:Ed Reavy
+S:The Collected Compositions of Ed Reavy
+M:C
+L:1/8
+Z:Joe Reavy
+N:Red Tom of the Hills. Tom came from somewhere
+N:in the Monaghan Hills-no one knew exactly where.
+N:He loved to ceili and "pack it in"
+N:Tom had a "shakey" hand that could have
+N:been a trial to most. But you would never know
+N:it from the way Tom could slap large cuts of butter
+N:on his bread at tea time. Mom Reavy said
+N:Tom's hand was not to be pitied
+N:"for it always shook deeper into the butter."
+K:G
+GF |\
+DG (3GFG DE=FD | GABc defa | gfdc (3Bcd BG | (3ABc AF DE=FD |
+G2dG c=fA^F | GABc (3def gf | dcB2 (3dcB | cAfA g2 :|
+Bd |\
+g2bg afbg | fgbg BGGe | =f2a^f gfaf | (3fef af dcBc |
+dG (3gfg bf (3gfg | BFBd gdBd | =fefa g^fga | fdcA G2 |]
+
+composer: Ed Reavy
+X: 3
+T:Never Was Piping So Gay
+R:reel
+C:Ed Reavy
+S:The Collected Compositions of Ed Reavy
+M:2/2
+L:1/8
+Z:Joe Reavy
+N:Never Was Piping So Gay. The concluding line
+N:of O'Driscoll's refrain in Yeats' poem, the
+N:Host of the air. O'Driscoll dreamed that
+N:his wife Bridget was taken by the Host
+N:as he was playing harmlessly at cards with
+N:"the merry old men." When O'Driscoll
+N:awoke from his dream,all that remained of the
+N:dream was the strange unearthly sound of a pipe
+N:piping away in the distant air-
+N:"And never was piping so sad, And
+N:never was piping so gay."
+K:G
+DB, |: G, B,D GBdB | caf dcA FA | G2 BG DGBG | AF (3FFF dFcF |
+G2 BFDGB,D | Aafd ^cdef | gfgd cBcA |1 FGAc BFDB, :|2 FGAc BG G2 |]
+fgd ^cdBF | FGBd cAFA | GB (3cBA BcdB | cafd ^cdef |
+gfgd ^cdBF | FGBdcAFA | BG (3GGG AF (3FFF | BdcA G4 |]
+gd ^cdBG | FGBd cAFA | GB (3cBA BcdB | cafd ^cdef | gbaf gd^cd |
+BGFG cAFA | BG (3FFF AF (3FFF | BdcA G2 |]
+
+composer: Ed Reavy
+X: 4
+T:The Bog of Allen
+R:Reel
+C:Ed Reavy
+S:The Collected Compostions of Ed Reavy
+M:2/2
+L:1/8
+Z:Joe Reavy
+N:The Bog of Allen. Mentioned eloquently in Joyce's
+N:short story, "The Dead" (in Dubliners). This
+N:desolate region reminds us of Yeats' line
+N:"the drifting, indefinite bitterness of life"
+N:Ed has always felt that far too much is made
+N:of Ireland's greenery and not enough said
+N:of her terrible greyness. Ed has lived to
+N:see the whole of Ireland, and he has tried
+N:to get as much of it as he could into his own tunes.
+K:G
+dc | BF (3AGF G=FDE | =F2AF ^FDCB, | DG (3AFF GABc | dgfa gfdc | %[jc]
+BG (3GF G=FDE | [A,2=F2] AF ^FDCB, | DG (3AGF GABc | dgfd c2 :|| %[jc]
+Bc | dg (3gfg bfag | dggf dcBc | dg (3gfg ag gfg | defd c2 Bc |
+dg (3gfg bgag | dggf dcBA | GABc defa | gefd c2 :|
+
+composer: Ed Reavy
+X: 5
+T:The Peddlar's Punch
+R:Reel
+C:Ed Reavy
+S:The Collected Compositions of Ed Reavy
+M:2/2
+L:1/8
+Z:Joe Reavy
+N:The Peddlar's Punch. Ed likes a title that
+N:can be taken in more than one way. In this one
+N:you don't know which punch of the peddler
+N:is the most lethal. He might pack quite a
+N:wallop if you cross him, but take just one good sup
+N:of his poteen and you'll be lucky if you
+N:don't take total leave of your senses.
+K:G
+df | G2 BF DGBF | =F2 f CFAF | G2 GB DGBc | dgfd (3cBA FA |
+G2 BF DGBG | =F2 [FA]F CFAF | GABc (3dcB (3cBA |1 GBAF DGGF :|
+|2 GBAF DGGA || B2 gefdcB | A=f (3fefABCA | G2 ge fd^cd |
+gfga gfdc | Bdge fdcB | A=f (3fef ABcA | GABc defa | gbag fdcA :|
+
+composer: Ed Reavy
+X: 6
+T:Leddy From Cavan
+R:Reel
+C:Ed Reavy
+S:The Collected Compositions of Ed Reavy
+M:2/2
+L:1/8
+Z:Joe Reavy
+N:Leddy from Cavan. John Leddy and Ed worked
+N:in the plumbing business together and became close
+N:friends over the years. John was proud of
+N:Ed's accomplishments, particularly because both
+N:were Cavanmen. His son John Jr. was a promising
+N:young fiddler who studied with Ed in the fortie
+N:John Sr. played the fiddle a bit himself
+N:and had a great love of traditional music.
+K:D
+DE |: =FEDF EDCE | Dd{e}c defd | [E2C2] {d}cB cAFE | =FEDF EDCE |
+DE=FE DA,G,A, | FGAF G2 FG | Ad{e}dc defd |1 =cAFE D2 EG :|
+|2 cAFE DEFA || d2 fd Adfd | c2 ec Gcec | d2 [df]d Adfa | gfge fddc |
+defd Adfd | cdef g2 fg | (3agf (3gfeA=cBd |1 ^cAGE DEFA :|
+|2 ^cAGE D2 EG |]
+
+composer: Ed Reavy
+X: 7
+T:The Slaney Bog
+R:Reel
+C:Ed Reavy
+S:The Collected Compositions of Ed Reavy
+M:2/2
+L:1/8
+Z:Joe Reavy
+N:The Slaney Bog. This tune became an
+N:instant favorite with "the
+N:New York fellows" back in the forties.
+K:D
+[F3A3] G FGAB | =cAFA G2 FG | (3AB=c AG FGAg | fdec dfec |
+AFAF FGAB | =cAFA G2FG | (3AB=c AF FGAg | fdec dde | f2 gf gfed |
+cAAB cdeg | fdfa g2 fg | (3agf gfe fddf | (3agf (3gfe fdec |
+dfed dAGE | Dddc defg |1 (3agf gfe dfec |2 (3agf gfe d2 |]
+
+composer: Ed Reavy
+X: 8
+T:Mairedelia
+R:Reel
+C:Ed Reavy
+S:The Collected Compositions of Ed Reavy
+M:2/2
+L:1/8
+Z:Joe Reavy
+N:Mairedelia. Ed's granddaughter, who is
+N:carrying on the tradition
+N:herself. Maire has won several first
+N:place fiddle medals in local
+N:and New York area feises.
+K:D
+FG | Addc dcAF | FDA,D FGAB | [Dc]Bcd dAGA | d2 fd ^cAFA |
+dcde (3fga ec | dcAF GE=CE | DEFG =cBAF | GE=CE D2 :|
+fe | defg abaf | e=c (3cBc efge | defg adfa | gece d2 fg |
+abaf efge | BecA GE=CE | DEFG dcAF | GE=CE D2 :|
+
+composer: Ed Reavy
+X: 9
+T:Johnny McGoohan's
+R:Reel
+C:Ed Reavy
+S:The Collected Compositions of Ed Reavy
+M:2/2
+L:1/8
+Z:Joe Reavy
+N:Johnny McGoohan's. Good musicians need
+N:good listeners, and two
+N:of the best listeners where Johnny
+N:and his wife Katey. Johnny would
+N:be waiting on his front porch
+N:hours before "the fellows" were
+N:expected on an evening for a
+N:session of music; and no matter how
+N:long they played, it was never too
+N:late for a few more tunes at
+N:the McGoohans. Tea and skohn did not
+N:mean (as it usually does) that
+N:the fiddling would stop. As Johnny
+N:would put it, "We'll have a bite
+N:to eat and be back at it for a few more
+N:before the night is done."
+N:And Katey would never disagree.
+K:G
+DF | G2 Bd gdBG | DGBd cAFA | G2 Bd gdBd | cBAG FADF | GABd gfaf |
+gedB A2 Bc | (3dcB(3cBA BFAF |1 ACB,A,G,A,B,D |2 G2 Ac BFFA |
+B2 GA Bdef | gfga gedc | B2 GA B2 eB | dBAF EFFA | B2 GA Bdef |
+gfe^c d2 ef | gbag fagf |1 e^cAF G2 GA |2 e^cAF G2 |]
+
+composer: Ed Reavy
+X: 10
+T:The Blessings of Silver
+R:Reel
+C:Ed Reavy
+S:The Collected Compositions of Ed Reavy
+M:2/2
+L:1/8
+Z:Joe Reavy
+N:The Blessings of Silver. Written
+N:for Lou and Mary Quinn's
+N:twenty-fifth wedding anniversary.
+N:Ed loved the connotations of
+N:the title: the blessings of twenty-five
+N:years of marriage, the blessings of a
+N:couple growing old together, and the many rewards
+N:of family life. Ed admired Lou not
+N:only because of his musical talent, but also because he
+N:was a self-made man who set high standards
+N:for other immigrants who followed him to the New World.
+K:Bb
+G>A | BdBF DGGF | (3d=EF CF DFCF | DFFA Bcdg | {a}g^fdf fdcA | %[jc]
+Bdce dcBA | DGBG ^FDCA, | DFFA Bcdg | ^fdcA G3 :|| g | bfa^f gfdc | %
+[jc]
+=bcd=e fdcd | bga=e f2 ge | fdcA BG[G,G]g | (3bag (3ag^f gfdc |
+=Bcd=e {fg}fefa | gbag ^fag=e |1 =fdcA BGG :|2 =fdcA BDD || %[jc]
+
+composer: Ed Reavy
+X: 11
+T:The High Hill
+M:2/2
+L:1/8
+C:Ed Reavy
+S:The Collected Compositions of Ed Reavy
+R:Reel
+N:It's the hill that almost
+N:disappears in the mist,
+N:where the hill people reside.
+N:Stories have been told about it and about
+N:those who live there. Their music is
+N:the music of a lost art and their
+N:stories are the tales of a forgotten time.
+Z:Joe Reavy
+K:D
+FG |: AD (3FED A,DDE | FGAc dcAG | AD (3FED A,EFA | GE=CE G2FG |
+AD (3FED A,DDE | FGAB cBce | dcAG FGAF | GE=CE D2 FG :|
+Addc d2 cd | ed (3dcd edd=c | AGAB =cBcd | e=c (3cBc ecdc |
+Add^c d2 cd | ed (3dcd edd=c | AGAB =cded |1 =cAGE DEFG :|
+|2 =cAGE D2 |]
+
+composer: Ed Reavy
+X: 12
+T:Love At The Endings
+M:2/2
+L:1/8
+C:Ed Reavy
+S:The Collected Compostions of Ed Reavy
+R:Reel
+N:Who can forget the impassioned speech of
+N:O'Killigan in O'Casey's Purple Dust,
+N:especially when he sets out to
+N:woo Avril away from her British lord.
+N:O'Killigan has only the simple
+N:things in his favor. But Avril finally
+N:succumbs to his grand talk as
+N:he urges her "to spit out what's here"
+N:and make a home with him out
+N:in the west of Ireland where they'll
+N:both find "things to say and
+N:things to do, and love at the endings."
+Z:Joe Reavy
+K:D
+FE |: DEFA BcdB | AF (3FDF AFEF | DEFA (3BcB AF | (3GFE (3FED B,DDF |
+DEFABcdB | AF (3FEF ABde | fgfe dfec |1 dBAF D3 E :|
+|2 dBAF D3 g | fgfe defg | afbf afed | fgfe dfbf | afdf e2 de |
+fgfe dcdB | AF (3FEF E2 DE | FABc dfec |1 dBAF d3 g :|2 dBAF D3 E |]
+
+composer: Ed Reavy
+X: 13
+T:The Gypsy Girl
+M:2/2
+L:1/8
+C:Ed Reavy
+S:The Collected Compositions of Ed Reavy
+R:Reel
+N:Like Sarah Casey, Synge's "beauty of Ballinacree,"
+N:the gypsy girl represents those strange
+N:beauties of the road who have
+N:such devilish wild appeal, unlike any
+N:others we know. And you'll never
+N:see the likes of them in any other setting
+N:however far you venture.
+Z:Joe Reavy
+K:A
+ED | CEAc fedc | (3gfe fg aece | (3dcB BA GBEG | Bdgf edcB |
+cAED CEAc | dcBc defg | aece dbfg | afec A2 :|| cd | eaag aece
+| dBgB aBgB | Aaag aece | dcBd cAcd | eaag aece | (3dcB Bc defg |
+aece dbfg | afec A2 :|
+
+composer: Ed Reavy
+X: 14
+T:Lane To The Glen
+M:2/2
+L:1/8
+C:Ed Reavy
+S:The Collected Compositions of Ed Reavy
+R:Reel
+N:This is the lane that led to the glen
+N:fiddler, the same solitary fiddler
+N:of Ed's dreams. Ed heard him often in
+N:the New World, particularly in th
+N:early morning hours when dreaming reaches
+N:its peak performance. Long after we left Cor
+N:own, Ed began to speak more openly of
+N:this "strange fiddler" whose music seem
+N:to come to him from all the familiar
+N:shops in the old neighborhood. Whenever
+N:we got a tape of a promising young player
+N:from Ireland, Ed would listen
+N: it intently. "He's good," he'd always
+N:remark, "but he's no glen fiddler
+Z:Joe Reavy
+K:F
+DE Fdc=B Aefa | G2 dG BGdG | F2 cF Acde | fedc ABcA |
+d^cde f2 ag | fedc AFDE | FEFG AGFG | Add^c d2 DE |
+Fdc=B AEFA | G2dB =BGdG | F2 cF Acde | fedc A=BcA |
+d^cde f2 ag | fedc AFDE | FEFG (3A=BA DE | FDE^C D2 de |
+f2 agfddf | ec (3c=Bc Gcef | f2 ag fede | fdec Adde |
+fefg (3agf (3gfe | fedc AFDE | FEFG AGFG | Add^c d2 de |
+f2 ag fddf | ec (3c=Bc Gceg | f2 ag fede | fded Adde |
+(3fgf df dfdf | (3efe ac cece | (3agf (3gfe dcAG | FDE^C D2 || %[jc]
+
+composer: Ed Reavy
+X: 15
+T:Aughamore
+M:2/2
+L:1/8
+C:Ed Reavy
+S:The Collected Compositions of Ed Reavy
+R:Reel
+N:Delia's town, just a short distance from
+N:her native village of Aughtaboy.
+N:Like so many beautiful Irish places names,
+N:Aughamore could fit nicely in
+N:any charming line of verse. No wonder the
+N:immigrant takes pride in rehearsi
+N:the sound of his own native place. He has
+N:lost much, but certainly not all.
+N:No feeling can quite match that stirring
+N:of the heart when an exile
+N:hears his "own place home" spoken on
+N:the lips of those he loves.
+Z:Joe Reavy
+K:D
+FG | ADFA dAFG | ADFA fedc | BEED EFGf | gfed cAAc |
+dfdf cece | BcdB AFDF | EFGA B2 (3dcB |1 cAGE D2 :|
+|2 cAGE FD D2 || fgaf gece | dfed cAAg | fg (3agf bgec |
+dfeg fddf | afdf gece | dfed cAGE | FGAB (3ccd ed |
+|1 cAGE FD D2 :|2 cAGE D2 |]
+
+composer: Paddy O'Brien
+X: 1
+T: The Penny Candle
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+|:Ad d2 adfd|Adfa g2 ec|Ad d2 AGFD|E/F/G AB =c2 AG|
+Ad d2 adfd|Adfa g2 fg|e/f/g ec d2 ed|cAGE ED D2:|
+|:d2 fd Adfa|g2 fa gedB|=c2 ec Gcec|B/c/d ef g2 ec|
+d2 fd Adfa|g2 fa gedB|cdec d2 ed|cAGE ED D2:|
+
+composer: Paddy O'Brien
+X: 2
+T: Bubbling Wine
+R: reel
+M: 4/4
+L: 1/8
+K: Edor
+A|:BE~E2 d2cd|BE~E2 ADFA|GBEF GBef|g2fg edBA|
+B=cBA GBdB|A2^GB A=GFA|BE~E2 GBec|dBAd BE E:|
+c|:Be~e2 gebe|Ad~d2 fdad|Beed efge|fgaf geef|
+g2fg edBc|d2fe dBAF|BE~E2 GBec|dBAd BE E:|
+
+composer: Paddy O'Brien
+X: 1
+T: The First Year In Buncrana
+R: reel
+M: 4/4
+L: 1/8
+K: Ador
+|:d|e2dB ABcd|eaag efge|dGG2 EGDG|B2AB GABd|
+edBd ABcd|eaaf g2fg|efed eaaf|gedg eAA:|
+|:d|eaa2 gedB|cdef gfge|dGG2 EGDG|B2AB GABd|
+eaa2 gedB|cdef g2fg|efed eaaf|gedg eAA:|
+
+composer: Paddy O'Brien
+X: 5
+T: The Swallow's Nest
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+(3DEF|GFGA GEDE|~G2dG BedB|AE~E2 ~A2Bd|egfa gedB|
+GFGA GEDE|GABd egge|dG~G2 eGdG|FGAF G2:|
+Bc|dg~g2 edBA|GEDE GABd|ea~a2 aged|BABd egge|
+dg~g2 agbg|aged egge|dG~G2 eGdG|FGAF G2:|
+
+composer: Paddy O'Brien
+X: 1
+T: Brendan McCann's Visit
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+|:dB B2 dGBd|cBcd efge|dB B2 dGBG|A2 FA DAFA|
+dB B2 dGBd|cBcd efge|dG (3Bcd gdBG|1 FGAF G2 ge:|2 FGAF G2 Bc||
+|:dB B2 dBgb|aged efge|dB B2 dGBG|AD (3EFG ABcA|
+dB B2 dBgb|agef g3 e|dG (3Bcd gdBG|1 FGAF G2 Bc:|2 FGAF G2 ge||
+
+composer: Paddy O'Brien
+X: 1
+T: The Nervous Man
+R: reel
+M: 4/4
+L: 1/8
+K: Gmix
+BdcA BG~G2|DGBd g^fde|=f2c_B AF~F2|CFAc fagf|
+d2cA BG~G2|DGBd gdBd|cFAc fage|1 fdcA G3A:|2 fdcA G2 (3ABc||
+K: Gmaj
+|:dg~g2 fgaf|gfdc ABcA|dg~g2 fdfa|gbaf ~g3a|
+gfdc AG~G2|AdcA GFDE|=FGAc fage|1 =fdcA G2 (3ABc:|2 =fdcA G3A||
+
+composer: Paddy O'Brien
+X: 1
+T: The Hills Of Tipperary
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+(3DEF|:G2 DG BGBd|g2 eg fdcA|BG~G2 FGAF|GBAG FDEF|
+G2 DG BGBd|g2 eg fdcA|BG~G2 FGAg|fdcA G4:|
+g2 dg bgaf|g2 eg fdcA|BG~G2 AGFD|FGAg fdce|
+g2 dg bgaf|g2 eg fdcA|BG~G2 FGAg|fdcA G4||
+g2 dg bgaf|g2 eg fdcA|BG~G2 AGFD|FGAg fdcA|
+BG~G2 FGAd|g2 eg fgag|bg~g2 egfd|cAFA G4||
+
+composer: Paddy O'Brien
+X: 6
+T: Patrick's Night
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+|:dc|BG ~G2 AGED|GABd egge|dB ~B2 gedB|A2 GB AGEG|
+BG ~G2 AGED|GABd egge|dB ~B2 gedB|AGAB G2:|
+|:Bd|g2 fa gedB|GB ~B2 GABd|g2 fa gedg|eA B/c/d eaaf|
+gbaf gfge|dB ~B2 gBdB|GA B/c/d gedB|AGAB G2:|
+
+composer: Paddy O'Brien
+X: 1
+T: Easter Sunday
+R: reel
+M: 4/4
+L: 1/8
+K: Amin
+|:G|EAAB cBcA|BG~G2 BcdB|AEAB cBce|dBGA BA~A2|
+EAAB cBce|dB~B2 gedg|eaaf ~g2 ab|1 gedB A3:|2 gedB A2||
+|:Bd|eaag edBA|BG~G2 BcdB|ABcd eaaf|~g2 fa gedg|
+ea ~a2 bg~ g2|aged BedB|AGEF GABd|1 gedB A2:|2 gedB A3||
+
+composer: Paddy O'Brien
+X: 1
+T: The Four-Leafed Shamrock
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+|:e|fd~d2 edBc|d2ec dBAF|DEFB ABdA|e2df edBd|
+fd~d2 edBc|dAec dBAF|DEFB ABdA|~e3f d3:|
+|:B|Ad~d2 dafa|bfaf efdB|BAFB ABdf|eB~B2 egfe|
+dBAB defa|bfaf efdB|DEFB ABdf|edef d3:|
+
+composer: Paddy O'Brien
+X: 1
+T: Conlan's Well
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+|:E||FEDF Adfd|eB~B2 dBAF|DEFA BFAF|~E2DF EFGE|
+FEDF Adfd|eB~B2 dBAB|defa bfaf|~e2ce fdd:|
+|:e||faaf defa|~a2fd efdB|BAFB ABdf|
+[1 eB~B2 efge|faaf defa|bgaf ~g2fe|dcdB ABdf|~e2de fdd:|
+[2 eB~B2 edBA|FEDF Adfd|eB~B2 dBAB|defa bfaf|~e2de fdd||
+
+composer: Paddy O'Brien
+X: 1
+T: The Road To Youghal
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+|:B||~d2Bd ABGE|DGBG AE~E2|GEDE GABd|gbaf gedB|
+GB~B2 eBdB|AcBG AGEG|gfgd (3efg dB|DEGA BGG:|
+|:d||gfge ~d2BG|ABcd eAAB|dg~g2 dcBG|FGAc BcBA|
+GB~B2 GBdB|cBcd eAAf|gfgd (3efg dB|DEGA BGG:|
+
+composer: Paddy O'Brien
+X: 3
+T: New Year's Eve
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+|:Bc|d2Bd cABG|DGBd g2fg|aAAB cBAG|ABcd eage|
+d2Bd cABG|DGBd g2fg|agef g2fd|cAFA G2:|
+|:Bc|dg~g2 dgBg|dGBd gfed|ea~a2 ea^ca|eA^ce gfef|
+dg~g2 dgBg|dGBd gabg|agef g2fd|cAFA G2:|
+
+composer: Paddy O'Brien
+X: 5
+T: Larkin's Beehive
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+|:A|Bd ~d2 edge|~d2 BG AGEG|Bd ~d2 edge|dBAc BGGA|
+BABd egge|~d2 BG AGEG|BABG ABGB|dBAc BG G:|
+|:A|BABd eg ~g2|ea ~a2 gedB|GBdB eBdB|(3ABc BG AGEG|
+BABd eg ~g2|ea ~a2 gedc|BG ~G2 ABGB|dBAc BG G:|
+
+composer: Paddy O'Brien
+X: 3
+T: Ormond Sound
+R: reel
+M: 4/4
+L: 1/8
+K: Ador
+|:EG|~A2 ed BedB|AG ~G2 AGEG|~A2ed Bdef|~g2fa gedg|
+eA ~A2 BedB|AGEF ~G2 AG|EA ~A2 GABd|gedB A2:|
+|:Bd|efge agfg|ea~a2 edBd|(3efg fa gfge|dg~g2 dcBd|
+cBce ~d2 ^cd|efge ~a2 ga|bg ~g2 agab|gedB A2:|
+
+composer: Joe Liddy
+X:41
+T:The Journey By Train
+R:Reel
+C:Joe Liddy (~1980)
+O:Irlande
+D:Shantalla "Seven Evenings, Seven Mornings", WBM 21030, 2002
+B:"The Leitrim Fiddler", Dublin 1981
+M:2/2
+L:1/8
+Q:1/2=110
+F:http://www.thesession.org/tunes/display/9839
+K:Edorian
+|:"Em"E2BE DE (3FED | E2BE ADFD| "Em"E2BE DEFA| "D"ABdf efdA|
+"Em"BEFE DE(3FED| E2FE DB,A,B,|"D"DEFA B2Ad|1 BBAF  EDB,D :|2 B/c/dAF E2Bd||
+"Em"e2be Befe | befe dBAB | "D"d2(3fed adfd | BdAB de(3fed|
+"C"e2be Bege |fd(3edc defa |"B"bfaf gfed |BdAF EBdf | 
+"Em"e2be Befe | befe dBAB | "D"d2(3fed adfd | adfd ABdf|
+"C"e2be dfed |BdAB defa | "B"bfab faed  | BdAF E4||
+
+composer: Joe Liddy
+X: 1
+T: Quinn's Bush
+R: reel
+M: 4/4
+L: 1/8
+K: Ador
+BG|EAAG ABcd|eAcA eAcA|G2 GF GABc|dGBG dGAG|
+EAAG ABcd|eAcA GABd|cBcd (3efg fa|gedB A2 BG|
+EAAG ABcd|eAcA eABA|G2 GF GABG|(3EFG DB, G,A,B,D|
+EAAG ABcd|eAcA GABd|cBcd (3efg fa|gedB A2||
+|:Bd|ea3 ea^ga|baag edBc|dg3 dgBg|eaaf gedg|
+[1 ea3 ea^ga|bagf g2 ed|^cdef gbaf|gedB A2:|
+[2 eaag efgb|aged cAGB|ABcd (3efg fa|gedB A2||
+
+composer: Joe Liddy
+X: 1
+T:The Sweat House
+R:Reel
+D:Dervish "Midsummer's Night" track 1, tune 3
+C:Joe Liddy (Co. Leitrim)
+S:Robert Eckert irtrad-l 2001-6-18
+Z:Adrian Scahill
+M:4/4
+L:1/8
+F:http://www.john-chambers.us/~jc/music/abc/mirror/irtrad-l/SweatHouse_1.abc	
+K:G
+E2FD E2FA|BdAB defd|edfe dAAd|BdAF DEFD|
+EBAF E2FA|BdAB defd|edfe dBAF|1 DEFD E3D:|2 DEFD E3A||
+Bee2 fded|BdAB dAFA|Beef dAde|fdaf gefd|
+Beeg fded|BdAB defd|edfe dBAF|DEFD E3A:|
+
+composer: Joe Liddy
+X: 1
+T: Susan's Den
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+FE|:DB,A,B, DEFA|B2 AF ABde|fd d2 edBc|dBAF E2 FE|
+DB,A,B, DEFA|B2 AF ABde|fded Bdfe|1 dBAF D2 FE:|2 dBAF D2FG||
+|:Ad d2 Adfd|adfd edBA|dBAF DEFA|dBAF E2 FG|
+[1 Ad d2 Adfd|adfd edBd|fded Bdfe|dBAF D2 FG:|
+[2 Ad d2 Adfa|bfaf gfed|BdAd fded|BdAF D2 FE||
+
+composer: Joe Liddy
+X: 1
+T: The Big House
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+B2dB GBdB|cBAG FDEF|GBdB cdeg|f2af gedB|
+GBdG ~G3B|cBAG FGAB|defg afge|dBcA BG~G2:|
+B/c/d gf gdBd|cBAG FGAB|cdef gefg|abaf gdBc|
+d2gf gd B/c/d|cBAG FGAB|defg afge|dBcA BG~G2:|
+
+composer: Joe Liddy
+X:1
+T:Kilcoon
+M:C|
+L:1/8
+R:Reel
+K:G
+G,2B,D GBdB | c2 ec dB{d}BA | GEDE GABG | A/B/c BA GEDB, |
+G,2B,D GBdB | cdef ~g3a | bgag edBA |1 GEDE GEDB,:||2 GEDE GABc ||
+dg~g2 dgeg | dggf gfed | ea{b}ag ~a3g | ea{b}ag edBc |
+dg~g2 dgbg | agef ~g3a | bgag edBA |1 GEDE GABc:||2 GEDE GEDB,|]
+
+composer: Joe Liddy
+X: 1
+T: The Garavogue
+R: reel
+M: 4/4
+L: 1/8
+K: Gmin
+F|DG G2 AFGF|DG G2 dGAc|dgga f2 gf|dcAG FGAF|
+DG G2 AFGF|DG G2 dGAc|dg g2 (3agf ga|fdcA G3 F|
+DG G2 AFGF|DG G2 dGAc|dgga f2 gf|dcAG FGAF|
+G3 D FGAF|DG G2 dGAc|dg g2 (3agf ga|fdcA G3|
+|:f|g2 g2 dgag|bgag gfd=e|f2 f2 cfag|fdcd fgaf|
+g2 ag bgag|(3agf dc BGBc|dg (3gfg afga|fdcA G3:|
+
+composer: Joe Liddy
+X: 1
+T: The Diamond Rock
+R: reel
+M: 4/4
+L: 1/8
+K: Edor
+ef|:g2 ae gedB|A2 BA GEED|B,EED EFGA|~B3 A Bdef|
+[1g2 ae gedB|A=cBA GEED|B,EED EFGA|BdAF GE E2:|
+[2gaba gedB|AEBE dEBE|B,EED EFGA|B2 AF GE E2||
+|:e3 d egBd|egdg egBd|egde g2 ae|gedB A2 Bd|e2 ed egBd|
+[1 egdg eg B2|dega gedB|AGED E3 d:|2 egde gabg|a2 ba gedB|AGED E2||
+
+composer: Joe Liddy
+X: 1
+T: The Handy Man
+R: hornpipe
+M: 4/4
+L: 1/8
+K: Gmaj
+|:BDGB ADFA|(3GAB GA (3FED DE|FGAB cdeg|fgef dedc|
+BDGB ADFA|(3GAB GA FGAB|cdfe dcAF|1 (3GAG FA G2 dc:|2 (3GAG FA G2 (3ABc||
+|:dedB GABd|cBAG FADA|GBdB ceag|
+[1 fgaf ~d2 Bc|dedB cecA|(3Bcd BG FGAB|cdfe dcAF|(3GAG FA G2 (3ABc:|
+[2 fgaf dega|bagf edcA|(3 Bcd BG FGAB|cdfe dcAF|(3GAG FA G2 dc||
+
+composer: Joe Liddy
+X:1
+T:The Red Bee
+C:Joe Liddy
+S:Mary Crowley
+R:reel
+M:4/4
+L:1/8
+K:Bm
+de|f2 BA BAFA|d2 cA BF (3GFE|FB (3cBA Bcde|fded cAde|
+fB (3BBB cBAF|EFAB cBce|fafe cBAF|EFAc B2:|
+|:cA|B2 cB fBcB|afge fecA|B2 cB fBcB|AFEF ABcA|
+B2 cB fBcB|afge fece|fafe cBAF|EFAc B2:|
+|:Bc|d2 fd adbf|afef edBc|defd edfe|dBAF E2 FA|
+d2 fd adbf|afef edBA|fB (3cBA FEFA|BdcA B2:|]
+
+composer: Joe Liddy
+X: 1
+T: Bencroy
+R: reel
+M: 4/4
+L: 1/8
+K: Ador
+|:gf|eA~A2 edBd|eA~A2 GEDE|~G3A BABd|eBdB GABd|
+eA~A2 edBd|eA~A2 GEDE|~G3A BABd|eBdB A2:|
+|:Bd|ea~a2 bgag|egde gedB|A2Bd eABd|(3efg fa gedg|
+ea~a2 bgab|gedB GABd|eA~A2 GEDE|GABG A2:|
+
+composer: Joe Liddy
+X:1
+T:Palmer's Gate
+C:Joe Liddy
+S:Mary Crowley
+R:reel
+M:4/4
+L:1/8
+K:Em
+GA|BEEF GABG|AdBA GEED|G3 A BAGA|BedB A2 GA|
+BEEF GABG|AdBA GEED|GABd edBA|GEFD E2:|:GA|
+Beed e2 ef|gefd edBA|G2 BG dGBA|GABe dBAd|
+Beed e2 ef|gefd edBA|GABd edBA|GEFD E2:|
+
+composer: Joe Liddy
+X: 1
+T: Lamascally Mill
+R: reel
+M: 4/4
+L: 1/8
+K: Dmix
+|fded f d3|dcAB cAFG|Adde fded|cdef g2 ag|
+fded fdec|dcAG FGAB|cdef geag|agec d2 de||
+fdec dcAB|cAGE FDFG|ABcA dcAB|cdef g2 ag|
+fded fdef|dcAB cAFG|Adfd gefg|agec d2 fg|
+a2 af dfaf|bfaf gfed|cAef gfed|ceAB cdeg|
+fgaf dfaf|bfaf gfed|cAef geag|agec d2 fg|
+abaf dfaf|gfed ceAB|cAef gfed|ceAB cdeg|
+fdad bfaf|gfed cAGA|defd geag|agec d4||
+
+composer: Joe Liddy
+X: 1
+T: McKenna Country
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+A2GE ADED|A,DDE FGAB|=c2de cAGE|=C2A,B, CDEG|
+ADED ADB=c|AGED =CDEG|AB=cd ecdB|=cAGE D2cB:|
+Add2 Adfd|adfd afdf|A=cc2 AcBc|g=cec gcec|
+[1 Add2 Adfd|adfd d=cAB|=cBcd ecdB|=cAGE D2cB:|
+[2 Addc defg|abaf g2ag|fdAB =cBcd|=cAGE D4||
+
+composer: Joe Liddy
+X: 1
+T: The Narrow Gauge
+R: reel
+M: 4/4
+L: 1/8
+K: Gmin
+|:BGGF GFDC|DGGF GABc|dg g2 fgag|fdcB AFAc|
+BGGF GFDC|DGGF GABc|dg g2 (3agf dc|BdcA BG G2:|
+|:B2 Bc dBfB|gdfd cBGA|B2 dB fBdf|gfdc BGGA|
+B2 Bc dBfB|dcBc dg g2|bg (3 agf gfdc|BdcA BG G2:|
+
+composer: Vincent Broderick
+X:1
+%
+T:Flagstone of Memories, The
+R:Reel
+C:Vincent Broderick
+B:The Turoe Stone
+S:(Exact transcription of the version in the book, p.5)
+M:4/4
+L:1/8
+Z:transcribed by Michael Anthony
+K:G
+| B4 BAGA| BDDD EGGA| BDDD EGGA| BddB A2GA|
+B2BA BAGA| BDDD EGGA| Bdd2 egge| dBAB G2GA:|
+|:g2ge f2fd| e2ed BAGA| Bdef gfgd| Bdef gdBd|
+g2ge f2fd| e2ed BAGA| Bdd2 egge| dBAB G2 z2:||
+
+composer: Vincent Broderick
+X: 1
+T: Halley's Comet
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+d|:gfed edBA|G2BG DGBd|edgd edef|gbaf gfed|
+gfed edBA|G2BG DGBD|DEGA B2Bd|gedc BGG2:|
+|:Bddcd4|Bdef gfed|Bdgd edef|gbaf gfed|
+Bddcd4|Bdef gfed|DEGA B2Bd|gedc BGG2:|
+
+composer: Vincent Broderick
+X: 1
+T: The Orion Belt
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+BAGA B3c|BAGA Bdd2|BAGA Bdef|gedB BAA2|
+gedB G2GE|DEGA BAA2|BAGA Bdde|dBAB G3A:|
+|:Bdef g2fg|a2ag fdde|f2dB BAFA|Adfd edBA|
+Bdef g2fg|a2ag fdd2|BAGA Bdde|dBAB G4:|
+
+composer: Vincent Broderick
+X: 3
+T: The Tinker's Daughter
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+dB|:A2FA DFAd|f2fd efdc|A2FA DAFA|B2dB BAFB|
+A2FA DFAd|f2fd efd2|faaa b2af|e2de fdd2:|
+|:faaa baaf|dfaf e2de|f2df efdf|f2df edBd|
+faaa baaf|dfaf e2de|f2df efdB|AFEG FDD2:|
+
+composer: Vincent Broderick
+X: 6204
+%
+T: Midsummer's Night (reel)
+C: V.Broderick
+B: "The Turoe Stone" 6.2
+M: 4/4
+L: 1/8
+Q: 360
+F: http://www.capeirish.com/webabc/collections/turoe/turoe-tunes.html#6204
+R: reel
+K: Ador
+e2dB A2AG|EGDG EGDd|e2dB A2Bd|eaag edeg|
+e2dB A2AG|EGDG EGDE|G2GA BGBd|gedB BAAB :|
+G2GA BGBd|g2ga baga|bage dGBd|e2ge edBA|
+G2GA BGBd|g2ga baga|bage dGBd|egdB BAA2 :|
+
+composer: Vincent Broderick
+X: 1
+T: The Goat's Path
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+~G3B d3z|GBdB cBAD|~E3D EFGD|G2BG cBAB|
+~G3B d3z|GBdB cBAG|cBcD ~E3D|DEGA B~G3:|
+c zcd e~g3|e~g3 ged2|cBcd ~e3d|edBG AGEG|
+cBcd e~g3|e~g3 gedz|cBcD ~E3D|DEGA B~G3:|
+
+composer: Vincent Broderick
+X: 1
+T: Stoney Brennan
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+D~G3 AGGE|DEGA B2 Bd|egdg Bdgd|egdB AGEG|
+D~G3 AGGE|DEGA B2 Bd|egdg e2 dB|1 BAFA G2 GE:|2 BAFA G2 A/B/c||
+d2 Bd edBd|g2 fg edeg|bagf gfed|e2 dB AGEG|
+D~G3 AGGE|DEGA B2 Bd|egdg e2 dB|1 BAFA G2 A/B/c:|2 BAFA G2 GE||
+
+composer: Vincent Broderick
+X: 1
+T: The Cockstep In The Dunghill
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+f|:gfed edBA|G~B3 GEDz|B~e3 Beef|gfed ~B3z|
+gfed edBA|G~B3 GED2|Beed efga|agfa ~g3z:|
+eBdB ABGA|BAGA B~d3|BAGA B~d3|eBdB ~A3z|
+eBdB Az GA|BAGA B~d3|Beed efga|1 agfa ~g3z:|2 agfa g2z||
+
+composer: Vincent Broderick
+X: 1
+T: The Bus To Mullahoran
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+E|:D2DE FDFA|B2BA BAFE|D2DE FAAF|GFEF DB,B,2|
+D2DE FDFA|B2BA Bdde|fdef dBAF|AFEF (D2D2):|
+|:fdef dBAF|AFED DEFG|Add2 faaf|gfed B2AB|
+D2DE FDFA|B2BA Bdde|fdef dBAF|AFEF (D2D2):|
+
+composer: Vincent Broderick
+X: 1
+T: The Old Schoolhouse
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+|:DFAF BFAF|DFAF GFED|DFAF BFAF|Adfe dBB2|
+Bdfd e2ed|egfe dBAF|DFAF BFAF|GFEG FDD2:|
+|:defg a2af|gfeg fdd2|fage f2fe|d2fd eAA2|
+defg a2af|gfeg fdd2|DFAF BFAF|GFEG FDD2:|
+
+composer: Vincent Broderick
+X: 1
+T: Cregg Castle
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+|:A|BedB A2 GE|D2 B,D DEGA|Beed e2 dB|GBdB BAA2|
+Beed e3 f|gefd edBA|BAGE D2 Bd|dBAB G3:|
+|:A|Beed e4|efga bage|d2 Bd d2 Bd|egdB BAA2|
+BAGE D2 B,D|D2 B,D DEGA|Beed e2 dB|dBAB G3:|
+
+composer: Vincent Broderick
+X: 1
+T: The Rainbow's End
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+GE|:D2 DE G2 GE|D2 DE GA B2|dBBA GABG|A2 BA AGEG|
+D2 DE G2 GE|D2 DE GABG|B2 BA G2 GA|BAGE ED D2:|
+Bdd^c d2 GA|BAAG EG G2|EAAG EFGA|BGAG EG D2|
+Bdd^c d2 GA|BAAG EF G2|B2 BA G2 GA|BAGE ED D2:|
+
+composer: Vincent Broderick
+X: 3
+T: The Crock Of Gold
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+B2dB cAGE|~G3A GEDB,|DEGA BAGA|B2dB cAFA|
+B2dB cAGE|GBAF GED2|g2fg egdB|DEGA BG~G2:|
+ea~a2 bagb|agef gede|gedB GABd|egdB BA~A2|
+ea~a2 bagb|agef gede|g2fg egdB|DEGA BG~G2:|
+
+composer: Vincent Broderick
+X: 1
+T: The Hellfire Club
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+|:GE|DEGA BGG2|ABAG FDD2|dcBA BAGF|E2AG FDEF|
+G2GA BGGB|ABAG FDD2|gbaf gfef|dBAB G2:|
+|:Bd|g2gf gdBd|e2ed edBd|e2ed edBA|GBdB BAA2|
+g2gf gdBd|e2ed edBd|gbaf gfef|dBAB G2:|
+
+composer: Vincent Broderick
+X: 1
+T: The Rookery
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+|:BGAG EGDG|EGDG EGDE|G2 Bd e2 dg|e2 dg edBA|
+G2 GA B2 Bd|e2 ed efga|bgag egge|dBAc BG G2:|
+|:b2 gb a2 ga|b2 gb aged|G2 Bd e2 dg|e2 dg edBA|
+G2 GA B2 Bd|e2 ed efga|bgag egge|d2 Ac BG G2:|
+
+composer: Richard Dwyer
+X: 1
+T: Healy's House
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+|:A|DEFG ABcA|defa gefe|dcAG FGAB|=cBcG~E2GE|
+DEFA GEAG|FAce ~d3e|fage fded|cAGE FDD:|
+|:g|fdec AdBd|=cAGE AEGE|FDEG ABce|dfeg fdfg|
+afge dcAG|ADFA Bdg2|fded cABd|cAGE D3:|
+
+composer: Richard Dwyer
+X: 1
+T: Richard Dwyer's
+R: reel
+M: 4/4
+L: 1/8
+K: Ador
+|: "Am"~A2EA cdeg|"Em"dABG AEGF|"Am"EAcA "G"(3Bcd gf|"F"ea2g "D"a2ag|
+"Am"eaed cA~A2|"G"Bgdc "Em"BdcB|"Am"AEcE dEcd|"Em"ecBG "Am"EAA2:|
+|: "Am"~a2ea c'aea|"G"~g2dg bagb|"F"aged cded|"Em"cABG "Am"EAA2|
+"Am"~a2ea eaea|"G"~g2ge dBGB|"D"A2(3Bcd eaaf|"Em"gedg "Am"eA A2:|
+
+composer: Richard Dwyer
+X: 1
+T: Richard Dwyer's Fancy
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+|:G2DG B,GDG|DEGA BGBd|e2Be edBe|d2BG AGEA|
+G2DG B,GDG|DEGA BGBd|e2Be edBG|AGEA G2 (3GGG:|
+|:e3e edBe|d2BG dGBd|cdec BcdB|ABcd edef|
+gdBd cedc|(3BAG (3AGF GDB,D|CEFA GABd|^cdef g4:|
+
+composer: Richard Dwyer
+X: 2
+T: Richie Dwyer's Dream
+R: reel
+M: 4/4
+L: 1/8
+K: Cmaj
+|:edcA dcAE|ABce dGBd|ea a2 bc'ba|gedc BG G2|
+edcB dcBA|cBAG EDEG|AGcA dced|cAAE A4:|
+|:agec Bdgd|(3cBA eA aAeA|agec d2 eg|ac'bc' a2 (3c'a^g|
+agec dG (3eed|cABG AGED|AGcA dced|cAAE A4:|
+
+composer: Richard Dwyer
+X: 1
+T: Once Upon A Time In Beara
+R: reel
+M: 4/4
+L: 1/8
+K: Ador
+|:A,2EA, (3CB,A, EA,|A,EDC B,G,G,B,|A,CB,D CED=F|EcBA GEDB,|
+A,2EA, (3CB,A, EA,|A,EDC B,G,A,B,|CB,A,B, CDEF|GEDA, B,G,G,G,:|
+EA (3AAA A3A|EAAB AGEF|G2dG eGBd|cBAG EGAB|
+ceAc BdGB|=FADF E2GA|cedB cBAG|EA (3AAA A2ED|
+EAAG A3A|EAAB AGEF|G2dG eGBd|cBAG EGAB|
+ceAc BdGB|=FADF E2DC|A,2(3A,A,A, A,B,CD|EDB,A, G,4||
+
+composer: Richard Dwyer
+X: 1
+T: Sherry's Return
+R: reel
+M: 4/4
+L: 1/8
+K: Emaj
+|:e2 BA GBEB|FA=DA GE E2|GBef geag|fedc B4|
+=dAdf eBef|gefe dfBA|(3GAB EB FA=DA|B=dAF GE E2:|
+|:GBef geag|fBdf eBAF|GBef geag|fedc B3 c|
+=dAdf eBef|gefe dfBA|(3GAB EB FA=DA|B=dAF GE E2:|
+
+composer: Richard Dwyer
+X: 2
+T: Tribute To Michael Dwyer
+R: reel
+M: 4/4
+L: 1/8
+K: Amin
+|:Aece dBcB|Aece dB G2|Aa a2 gabg|^fdec dBcB|
+AEAB cdec|dGBd g2 ag|^fd d2 cA A2|1 EAGB A3 E:|2 EAGB A3 B||
+|:c3 d e3 g|a2 ed cAAB|c2 ec Bdga|bc'bg a3 b|
+c'bag fedc|BcdB Gbag|^fd d2 cA A2|1 EAGB AeAB:|2 EAGB A4||
+
+composer: Richard Dwyer
+X: 1
+T: Trip To Larry Gavin's
+R: reel
+M: 4/4
+L: 1/8
+K: Amaj
+|:ecdB Ffed|(3cBA BG AGEF|GABA GedG|ABcf e2 (3dcB|
+ABcA FD (3DCD|B,CDB, EB,EF|GABG eBGE|DB,EB, CA,A,2:|
+|:(3efe cA (3efe cA|(3ded BG (3ded BG|cAdB ecdc|BAGF EA,CE|
+FAdc BAGF|EAce defg|aged BcdB|ec (3dcB cAA2:|
+
+composer: Richard Dwyer
+X: 1
+T: Vanishing Keys
+R: reel
+M: 4/4
+L: 1/8
+K: Amaj
+|:EAcA BAcA|EABc dAde|fedc dcBA|BAGE (3DED CD|
+EAcA BAcA|EABc dBcA|GE {G}(3E^DE B,E {G}(3E^DE|GEDB, A,4:|
+|:cAdB e^dea|gebg aged|BcdB e^de=d|cABG AGE2|
+cAdA cAdA|B/c/d ea gabg|aefd ecdB|cABG A4:|
+
+composer: Richard Dwyer
+X: 1
+T: Greta's Favourite
+R: reel
+M: 4/4
+L: 1/8
+K: Edor
+eBdB AGEF|(3GFE FD EDB,D|eBdB ADFA|BdAd BeeA|
+(3BdB eB defd|BAGF EDB,D|=CEGE DAFA|BdAB GEE2:|
+Beef gfeg|fedA BAdc|Beef defa|(3bag af gefd|
+(3ege de BdAB|~G2FG EDB,D|=CEGE DAFA|(3BdB AB GEE2:|
+
+composer: Brendan Tonra
+X: 2
+T: The Boston-Sligo
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+A|BAFA B2dB|BAFD EDB,D|BAFA B2dB|AFDF E3A|
+BAFA B2dB|BAFD EDB,E|DB,A,B, DEFA|BFAF D3:|
+|:a|f3a bafb|afdf edBd|f3a bafb|afdf e2de|
+fefa bafb|afdf edBA|DEFA BAdB|AFEF D3:|
+
+composer: Brendan Tonra
+X:1
+T: Bonny Katherine
+C: Brendan Tonra
+Q: 350
+R: reel
+Z:Transcribed by Bill Black
+M: 4/4
+L: 1/8
+K: D
+df f2 edBc | dfed BFDE | F3 E DEFD | E2 DF ED B,2 |
+df f2 edBc | dfed BFDE | F3 E DFBd | efde fd d2 ||
+f3 e defg | adfa dfec | f3 e dfaf |1 defd edeg |
+f3 e defg | adfa dfec | (3dcB cA BcdB | (3efe de fd d2 :|
+|2 defd eg (3efg | afeg f3 e | dcBA BAFA | BdAF DEFD | (3EFE DE FD D2 ||
+
+composer: Brendan Tonra
+X: 5
+T: Carraigín Ruadh
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+|: df ~f2 eBdB | AF ~F2 EDB,A, | dBAF DEFA | Bded BAFA |
+ f2df e2dB | AF F2 EDB,A, | B,EFE DEFA | dBAG FDD2 :|
+|: fa a2 afde | faaf bfaf | gfed Bdag | (3fga edBA F2 |
+[1 fa a2 afde | faaf bfaf | gfef gbag | (3fga egfd d2 :|
+[2 gb (3bbb afde | ~f3d eB B2 | Bded BAFA | dBAG FDD2 ||
+
+composer: Brendan Tonra
+X: 1
+T: Christmas In America
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+(3DEF|:G2 BG EDB,E|DEGB AE E2|D2 B,D GABd|g2 fg edBA|
+GABG EDB,E|DEGB AGEG|DEGA Bdeg|dBcA G2 z:|
+|:Bd|(3gbg fg edBd|gfga bgab|gagd edge|d3B AGEG|
+g2 fg edBd|g3a bgab|gbag edge|dBcA G2 :|
+
+composer: Brendan Tonra
+X: 1
+T: Gowlaun
+R: reel
+M: 4/4
+L: 1/8
+K: Gmaj
+||: dfeB dBAc | BGAG EDB,E | (3GFE (3FED E2 CE | DEGB AE E2 |
+| dfeB dBAc | BGAG EDB,E | G2 FD E2CE | DEGA BG G2 :|
+|: dfgf g2 ef | gbaf ge d2 | (3efg fa gbag | (3fga eB d2 Bd |
+| ea a2 agef | gbaf gedB | GABd efge |1 dBAc BGG2 :|2 dBcA G4 ||
+
+composer: Brendan Tonra
+X: 1
+T: The Jolly Daughters
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+||: FEDE FA (3AAA | BAdB (3ABA FE | FEDE FAAF | (3GFE (3FED B,DA,D |
+| FEDE FA (3AAA | BAdB (3ABA FE | AF (3FFF dF (3FFF | AFDE FE E2 :|
+|: (3fgf ef ~d3B | BAFB AFEF | (3faf ef dcdf | bfaf efbf |
+| afdf edBd | (3ABA FB AFEF | AF (3FFF dF (3FFF |1 AFDE FE E2 :|2 AFFE ED E2 ||
+
+composer: Brendan Tonra
+X: 1
+T: The Road To Sligo
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+|:A|BAdB AF ~F2|DEFD EFDB,|DEFA BABd|ABdf eBdA|
+BAdB AF ~F2|DEFD EFDB,|DEFA fece|dBAG FAD:|
+|:A|fd ~d2 Adfb|bafb afeg|fd ~d2 adfa|baaf e2de|
+f2fd edfa|bafb afed|ABde fece|dBAG FAD:|
+
+composer: Brendan Tonra
+X:1
+T: Walt the Fiddler
+C: Brendan Tonra
+Q: 350
+R: reel
+Z:Transcribed by Bill Black [http://www.capeirish.com/webabc]
+M: 4/4
+L: 1/8
+K: D
+BcdB AFDE | FEDB, A,DFA | BcdB AFAB | defd efdA |
+BcdB AFDE | FEDB, A,DFA | defd efdB | AFEG FD D2 :|
+fdef dfbf | afdf edBd | BAFB AFAB |1 defd efde |
+fdef dfbf afdf edBA | defd efdB | AFEG FD D2 :|
+|2 defd edfb | bddd addd | gece dAFA | defd efdB |AFEF FD D2 ||

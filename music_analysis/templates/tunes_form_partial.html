@@ -1,0 +1,76 @@
+{% load static %}
+{% load custom_filters %}
+<link rel="stylesheet" href="{% static 'music_analysis/css/tunes.css' %}">
+
+<div class="modal-header">
+    <h2>{% if tune %}Edit Reel{% else %}Add New Reel{% endif %}</h2>
+    <span class="close-button" aria-label="Close">&times;</span>
+</div>
+<form method="POST" id="tune-form" action="{% if tune %}{% url 'tunes_edit' tune.pk %}{% else %}{% url 'tunes_add' %}{% endif %}">
+    {% csrf_token %}
+
+    <div class="form-group">
+        {{ form.name.label_tag }}
+        {{ form.name|add_class:"form-control" }}
+    </div>
+
+    <div class="form-group">
+        {{ form.composer.label_tag }}
+        {{ form.composer|add_class:"form-control" }}
+    </div>
+
+    <div class="form-group">
+        {{ form.abc_notation.label_tag }}
+        {{ form.abc_notation|add_class:"form-control" }}
+    </div>
+
+    <div class="form-actions">
+        <button type="submit">{% if tune %}Update{% else %}Create{% endif %}</button>
+    </div>
+</form>
+
+<style>
+    .form-group {
+        color: rgb(0, 0, 0);
+
+    }
+</style>
+
+
+
+<script>
+    // Handle form submission via AJAX
+    document.getElementById('tune-form').onsubmit = function(event) {
+        event.preventDefault();
+        var formData = new FormData(this);
+        fetch(this.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest'
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Close modal and refresh tunes list
+                var modal = document.getElementById('tune-modal');
+                modal.style.display = 'none';
+                location.reload(); // Or update the tunes list via AJAX
+            } else {
+                // Handle errors (not shown in this example)
+            }
+        })
+        .catch(error => console.error('Error submitting form:', error));
+    };
+
+    // Handle close button
+    var closeButton = document.querySelector('.close-button');
+    if (closeButton) {
+        closeButton.onclick = function() {
+            // Close the modal
+            var modal = document.getElementById('tune-modal');
+            modal.style.display = 'none';
+        };
+    }
+</script>

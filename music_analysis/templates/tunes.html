@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunes</title>
+    <link rel="stylesheet" href="{% static 'music_analysis/css/tunes.css' %}">
+    <style>
+        /* Modal styles */
+        .modal-header {
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .modal-header h2 {
+            margin: 0;
+            color: rgb(0, 0, 0);
+        }
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.5); /* Black with opacity */
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #000000;
+            width: 50%;
+            position: relative;
+            /*text-color: #000000;*/
+        }
+        .close-button {
+            color: #f44336;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close-button:hover,
+        .close-button:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .search-bar {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        #search-query {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 600px;
+            background-color: #fff;
+            color: rgb(0, 0, 0);
+        }
+        #search-type {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #search-button {
+            padding: 8px 16px;
+            background-color: #7D7D7D;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #search-button:hover {
+            background-color: #C2A83E;
+        }
+        #add-new-tune-button {
+            background-color: #7D7D7D;
+            color: white;
+            padding: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 200px;
+            margin-left: 300px;
+        }
+        #add-new-tune-button:hover {
+            background-color: #C2A83E;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Reels List</h1>
+
+        <!-- Search Form -->
+        <div class="search-bar">
+            <select id="search-type">
+                <option value="name">Name</option>
+                <option value="composer">Composer</option>
+            </select>
+            <input type="text" id="search-query" placeholder="Search reels...">
+            <button id="search-button">Search</button>
+        </div>
+
+        <!-- List of tunes -->
+        <ul id="tunes-list">
+            {% for tune in tunes %}
+                <li>
+                    <span><strong>{{ tune.name }}</strong> by {{ tune.composer }}</span>
+                    <div>
+                        <a href="#" class="edit-tune-link"
+                           data-edit-url="{% url 'tunes_edit' tune.pk %}">Edit</a>
+                        <a href="#" class="delete-tune-link"
+                           data-delete-url="{% url 'tunes_delete' tune.pk %}">Delete</a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <!-- Button to open the "Add New Tune" popup -->
+        <button id="add-new-tune-button">Add New Reel</button>
+    </div>
+
+    <!-- Add/Edit Tune Modal -->
+    <div id="tune-modal" class="modal">
+        <div class="modal-content">
+            <!-- Content will be loaded via AJAX -->
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div id="delete-modal" class="modal">
+        <div class="modal-content">
+            <!-- Content will be loaded via AJAX -->
+        </div>
+    </div>
+
+    <!-- Home Button with Logo -->
+    <a href="{% url 'music_dashboard' %}" class="home-button">
+        <img src="{% static 'music_analysis/images/homeIcon.png' %}" alt="Home">
+    </a>
+
+    <script>
+        // Get search elements
+        const searchButton = document.getElementById('search-button');
+        const searchType = document.getElementById('search-type');
+        const searchQuery = document.getElementById('search-query');
+        const tunesList = document.getElementById('tunes-list');
+
+        // Handle search button click
+        searchButton.onclick = function(event) {
+            event.preventDefault();
+
+            // Get the search type and query
+            const type = searchType.value;
+            const query = searchQuery.value;
+
+            // Send search request to the backend
+            fetch(`/search-tunes/?type=${type}&query=${query}`, {
+                method: 'GET',
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Clear the existing tunes list
+                tunesList.innerHTML = '';
+
+                // Update the tunes list with search results
+                data.tunes.forEach(tune => {
+                    const tuneItem = document.createElement('li');
+                    tuneItem.innerHTML = `
+                        <span><strong>${tune.name}</strong> by ${tune.composer}</span>
+                        <div>
+                            <a href="#" class="edit-tune-link" data-edit-url="${tune.edit_url}">Edit</a>
+                            <a href="#" class="delete-tune-link" data-delete-url="${tune.delete_url}">Delete</a>
+                        </div>
+                    `;
+                    tunesList.appendChild(tuneItem);
+                });
+
+                // Reinitialize event listeners for the edit and delete links
+                initializeEditDeleteLinks();
+            })
+            .catch(error => console.error('Error fetching search results:', error));
+        };
+
+        function initializeEditDeleteLinks() {
+            // Reinitialize edit and delete event listeners
+            const editTuneLinks = document.querySelectorAll('.edit-tune-link');
+            const deleteTuneLinks = document.querySelectorAll('.delete-tune-link');
+
+            editTuneLinks.forEach(element => {
+                element.onclick = function(event) {
+                    event.preventDefault();
+                    const editUrl = this.getAttribute('data-edit-url');
+                    loadModalContent(editUrl, tuneModal);
+                };
+            });
+
+            deleteTuneLinks.forEach(element => {
+                element.onclick = function(event) {
+                    event.preventDefault();
+                    const deleteUrl = this.getAttribute('data-delete-url');
+                    loadModalContent(deleteUrl, deleteModal);
+                };
+            });
+        }
+        initializeEditDeleteLinks();
+
+        // Get modal elements
+        var tuneModal = document.getElementById('tune-modal');
+        var deleteModal = document.getElementById('delete-modal');
+
+        // Get open modal buttons
+        var addNewTuneButton = document.getElementById('add-new-tune-button');
+        var editTuneLinks = document.getElementsByClassName('edit-tune-link');
+        var deleteTuneLinks = document.getElementsByClassName('delete-tune-link');
+
+        // Function to load content into the modal via AJAX
+        function loadModalContent(url, modalElement) {
+            fetch(url, {
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            })
+                .then(response => response.text())
+                .then(html => {
+                    modalElement.querySelector('.modal-content').innerHTML = html;
+                    // Display the modal
+                    modalElement.style.display = 'block';
+
+                    // Handle form submissions within the modal
+                    var form = modalElement.querySelector('form');
+                    if (form) {
+                        form.onsubmit = function(event) {
+                            event.preventDefault();
+                            var formData = new FormData(form);
+                            fetch(form.action, {
+                                method: 'POST',
+                                body: formData,
+                                headers: {
+                                    'X-Requested-With': 'XMLHttpRequest'
+                                },
+                            })
+                            .then(response => response.json())
+                            .then(data => {
+                                if (data.success) {
+                                    // Close modal and refresh tunes list
+                                    modalElement.style.display = 'none';
+                                    location.reload(); // Or update the tunes list via AJAX
+                                } else {
+                                    // Replace modal content with the new form (with errors)
+                                    modalElement.querySelector('.modal-content').innerHTML = data.html;
+                                    // Re-attach form submission handler
+                                    loadModalContent(url, modalElement);
+                                }
+                            })
+                            .catch(error => console.error('Error submitting form:', error));
+                        };
+                    }
+
+                    // Handle close button
+                    var closeButton = modalElement.querySelector('.close-button');
+                    if (closeButton) {
+                        closeButton.onclick = function() {
+                            modalElement.style.display = 'none';
+                        };
+                    }
+
+                    // Handle cancel button in delete modal
+                    var cancelButton = modalElement.querySelector('#cancel-delete-button');
+                    if (cancelButton) {
+                        cancelButton.onclick = function() {
+                            modalElement.style.display = 'none';
+                        };
+                    }
+                })
+                .catch(error => console.error('Error loading modal content:', error));
+        }
+
+        // Open "Add New Tune" modal
+        addNewTuneButton.onclick = function(event) {
+            event.preventDefault();
+            loadModalContent("{% url 'tunes_add' %}", tuneModal);
+        };
+
+        // Open "Edit Tune" modal
+        Array.from(editTuneLinks).forEach(function(element) {
+            element.onclick = function(event) {
+                event.preventDefault();
+                var editUrl = this.getAttribute('data-edit-url');
+                loadModalContent(editUrl, tuneModal);
+            };
+        });
+
+        // Open "Delete Confirmation" modal
+        Array.from(deleteTuneLinks).forEach(function(element) {
+            element.onclick = function(event) {
+                event.preventDefault();
+                var deleteUrl = this.getAttribute('data-delete-url');
+                loadModalContent(deleteUrl, deleteModal);
+            };
+        });
+
+        // Close modals when clicking outside of the modal content
+        window.onclick = function(event) {
+            if (event.target == tuneModal) {
+                tuneModal.style.display = 'none';
+            }
+            if (event.target == deleteModal) {
+                deleteModal.style.display = 'none';
+            }
+        };
+
+        // Handle close button
+        var closeButton = modalElement.querySelector('.close-button');
+        if (closeButton) {
+            closeButton.onclick = function() {
+                modalElement.style.display = 'none';
+            };
+        }
+
+    </script>
+
+</body>
+</html>

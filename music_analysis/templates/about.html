@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{% static 'music_analysis/css/about.css' %}">
+</head>
+<body>
+
+    <div class="about-container">
+        <h1>About Us</h1>
+        <div class="team-grid">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <img src="{% static 'music_analysis/images/reynolds.png' %}" alt="Patrick" class="team-image">
+                <h3>Patrick Reynolds</h3>
+                <p>preynold@hamilton.edu</p>
+                <p>Hamilton College</p>
+                <p>Professor of Biology - Client</p>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <img src="{% static 'music_analysis/images/strash.png' %}" alt="Strash" class="team-image">
+                <h3>Darren Strash</h3>
+                <p>dstrash@hamilton.edu</p>
+                <p>Hamilton College</p>
+                <p>Professor of Computer Science - Technical Supervisor</p>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <img src="{% static 'music_analysis/images/maheen.png' %}" alt="Maheen" class="team-image">
+                <h3>Maheen Masoud</h3>
+                <p>mmasoud@hamilton.edu</p>
+                <p>Hamilton College</p>
+                <p>Student - Developer</p>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="team-member">
+                <img src="{% static 'music_analysis/images/ivan.png' %}" alt="Ivan" class="team-image">
+                <h3>Yifan (Ivan) Wu</h3>
+                <p>ywu2@hamilton.edu</p>
+                <p>Hamilton College</p>
+                <p>Student - Developer</p>
+            </div>
+
+            <!-- Team Member 5 -->
+            <div class="team-member">
+                <img src="{% static 'music_analysis/images/ahmed.png' %}" alt="Ahmed" class="team-image">
+                <h3>Ahmed Abdelrehim</h3>
+                <p>aabdelre@hamilton.edu</p>
+                <p>Hamilton College</p>
+                <p>Student - Developer</p>
+            </div>
+        </div>
+    </div>
+    <!-- Home Button with Logo -->
+    <a href="{% url 'music_dashboard' %}" class="home-button">
+        <img src="{% static 'music_analysis/images/homeIcon.png' %}" alt="Home">
+    </a>
+
+</body>
+</html>
